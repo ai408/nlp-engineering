@@ -1,0 +1,25 @@
+{
+   "train_batch_size": 4,    //训练batch size
+   "steps_per_print": 2000,  //每训练多少步打印一次训练信息
+   "optimizer": {            //优化器
+     "type": "Adam",         //优化器类型
+     "params": {             //优化器参数
+       "lr": 0.001,          //学习率
+       "betas": [            //Adam优化器的betas参数
+         0.8,                //betas[0]
+         0.999               //betas[1]
+       ],
+       "eps": 1e-8,          //Adam优化器的eps参数
+       "weight_decay": 3e-7  //Adam优化器的weight_decay参数
+     }
+   },
+   "scheduler": {               //学习率调度器
+     "type": "WarmupLR",        //学习率调度器类型
+     "params": {                //学习率调度器参数
+       "warmup_min_lr": 0,      //学习率调度器的warmup_min_lr参数
+       "warmup_max_lr": 0.001,  //学习率调度器的warmup_max_lr参数
+       "warmup_num_steps": 1000 //学习率调度器的warmup_num_steps参数
+     }
+   },
+   "wall_clock_breakdown": false //是否打印每个epoch的时间
+ }

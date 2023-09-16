@@ -1,0 +1,251 @@
+D:\Python310\python.exe L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\pretrain_clm.py --output_dir ./output_model --model_name_or_path L:/20230903_Llama2/Llama-2-7b-hf --train_files ../../data/train_sft.csv ../../data/train_sft_sharegpt.csv --validation_files ../../data/dev_sft.csv ../../data/dev_sft_sharegpt.csv --do_train --overwrite_output_dir
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin D:\Python310\lib\site-packages\bitsandbytes\libbitsandbytes_cuda118.dll
+CUDA SETUP: CUDA runtime path found: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart64_110.dll
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary D:\Python310\lib\site-packages\bitsandbytes\libbitsandbytes_cuda118.dll...
+[2023-09-16 10:44:05,433] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+NOTE: Redirects are currently not supported in Windows or MacOs.
+09/16/2023 10:44:35 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+09/16/2023 10:44:35 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'fsdp_min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=./output_model\runs\Sep16_10-44-13_MM-202203161213,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=3.0,
+optim=adamw_hf,
+optim_args=None,
+output_dir=./output_model,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['tensorboard'],
+resume_from_checkpoint=None,
+run_name=./output_model,
+save_on_each_node=False,
+save_safetensors=False,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+['../../data/train_sft.csv', '../../data/train_sft_sharegpt.csv']
+训练文件总个数 2
+D:\Python310\lib\site-packages\datasets\load.py:2072: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=None' instead.
+  warnings.warn(
+Using custom data configuration default-0be939ed6ae746cd
+Loading Dataset Infos from D:\Python310\lib\site-packages\datasets\packaged_modules\csv
+Overwrite dataset info from restored data version if exists.
+Loading Dataset info from ./output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d
+09/16/2023 10:44:36 - INFO - datasets.builder - Using custom data configuration default-0be939ed6ae746cd
+09/16/2023 10:44:36 - INFO - datasets.info - Loading Dataset Infos from D:\Python310\lib\site-packages\datasets\packaged_modules\csv
+09/16/2023 10:44:36 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+09/16/2023 10:44:36 - INFO - datasets.info - Loading Dataset info from ./output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d
+09/16/2023 10:44:36 - INFO - datasets.builder - Found cached dataset csv (L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/pretrain/output_model/dataset_cache/csv/default-0be939ed6ae746cd/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d)
+09/16/2023 10:44:36 - INFO - datasets.info - Loading Dataset info from L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/pretrain/output_model/dataset_cache/csv/default-0be939ed6ae746cd/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d
+Found cached dataset csv (L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/pretrain/output_model/dataset_cache/csv/default-0be939ed6ae746cd/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d)
+Loading Dataset info from L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/pretrain/output_model/dataset_cache/csv/default-0be939ed6ae746cd/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d
+0 start load tokenizer
+[INFO|configuration_utils.py:710] 2023-09-16 10:44:36,328 >> loading configuration file L:/20230903_Llama2/Llama-2-7b-hf\config.json
+[INFO|configuration_utils.py:768] 2023-09-16 10:44:36,329 >> Model config LlamaConfig {
+  "_name_or_path": "L:/20230903_Llama2/Llama-2-7b-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.31.0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|tokenization_utils_base.py:1837] 2023-09-16 10:44:36,396 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:1837] 2023-09-16 10:44:36,396 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:1837] 2023-09-16 10:44:36,396 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:1837] 2023-09-16 10:44:36,396 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:1837] 2023-09-16 10:44:36,396 >> loading file tokenizer_config.json
+0 end load tokenizer
+0 start load model
+[INFO|modeling_utils.py:2600] 2023-09-16 10:44:36,857 >> loading weights file L:/20230903_Llama2/Llama-2-7b-hf\model.safetensors.index.json
+[INFO|configuration_utils.py:599] 2023-09-16 10:44:36,966 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0,
+  "transformers_version": "4.31.0"
+}
+
+Loading checkpoint shards: 100%|██████████| 2/2 [15:09<00:00, 454.95s/it]
+[INFO|modeling_utils.py:3329] 2023-09-16 11:02:39,901 >> All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+[INFO|modeling_utils.py:3337] 2023-09-16 11:02:40,005 >> All the weights of LlamaForCausalLM were initialized from the model checkpoint at L:/20230903_Llama2/Llama-2-7b-hf.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+0 end load model
+[INFO|configuration_utils.py:559] 2023-09-16 11:02:40,285 >> loading configuration file L:/20230903_Llama2/Llama-2-7b-hf\generation_config.json
+[INFO|configuration_utils.py:599] 2023-09-16 11:02:40,286 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "do_sample": true,
+  "eos_token_id": 2,
+  "max_length": 4096,
+  "pad_token_id": 0,
+  "temperature": 0.6,
+  "top_p": 0.9,
+  "transformers_version": "4.31.0"
+}
+
+['text']
+Running tokenizer on dataset:   0%|          | 0/9861 [00:00<?, ? examples/s]Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-4709681f0e0f519c.arrow
+09/16/2023 11:02:42 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-4709681f0e0f519c.arrow
+Running tokenizer on dataset: 100%|██████████| 9861/9861 [00:06<00:00, 1473.97 examples/s]
+Running tokenizer on dataset:   0%|          | 0/400 [00:00<?, ? examples/s]Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-72cfc580067dfdb5.arrow
+09/16/2023 11:02:49 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-72cfc580067dfdb5.arrow
+Running tokenizer on dataset: 100%|██████████| 400/400 [00:01<00:00, 285.85 examples/s]
+09/16/2023 11:02:49 - WARNING - __main__ - The chosen tokenizer supports a `model_max_length` that is longer than the default `block_size` value of 1024. If you would like to use a longer `block_size` up to `tokenizer.model_max_length` you can override this default with `--block_size xxx`.
+Grouping texts in chunks of 1024:   0%|          | 0/9861 [00:00<?, ? examples/s]09/16/2023 11:02:57 - INFO - __main__ - group texts input examples length9861 after_group size3246
+09/16/2023 11:02:57 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-cadd41638ecdb9a2.arrow
+Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-cadd41638ecdb9a2.arrow
+Grouping texts in chunks of 1024: 100%|██████████| 9861/9861 [00:11<00:00, 831.84 examples/s]
+Grouping texts in chunks of 1024:   0%|          | 0/400 [00:00<?, ? examples/s]Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-3b9c6fccb4800b97.arrow
+09/16/2023 11:03:03 - INFO - __main__ - group texts input examples length400 after_group size738
+09/16/2023 11:03:03 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\output_model\dataset_cache\csv\default-0be939ed6ae746cd\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-3b9c6fccb4800b97.arrow
+Grouping texts in chunks of 1024: 100%|██████████| 400/400 [00:02<00:00, 150.17 examples/s]
+0 start select train_dataset
+0 end select train_dataset
+0 Initialize our Trainer
+Traceback (most recent call last):
+  File "L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\pretrain_clm.py", line 592, in <module>
+    main()
+  File "L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\pretrain\pretrain_clm.py", line 531, in main
+    trainer = Trainer( # 训练器
+  File "D:\Python310\lib\site-packages\transformers\trainer.py", line 499, in __init__
+    self._move_model_to_device(model, args.device)
+  File "D:\Python310\lib\site-packages\transformers\trainer.py", line 741, in _move_model_to_device
+    model = model.to(device)
+  File "D:\Python310\lib\site-packages\transformers\modeling_utils.py", line 1900, in to
+    return super().to(*args, **kwargs)
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 1145, in to
+    return self._apply(convert)
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 797, in _apply
+    module._apply(fn)
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 797, in _apply
+    module._apply(fn)
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 797, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "D:\Python310\lib\site-packages\torch\nn\modules\module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 24.00 GiB total capacity; 23.22 GiB already allocated; 0 bytes free; 23.22 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

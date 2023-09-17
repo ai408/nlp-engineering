@@ -67,27 +67,27 @@ _CITATION = """
 @evaluate.utils.file_utils.add_start_docstrings(_DESCRIPTION, _KWARGS_DESCRIPTION) # 添加文档字符串
 class Accuracy(evaluate.Metric):
     def _info(self): # 定义精度指标的信息
-        return evaluate.MetricInfo(
-            description=_DESCRIPTION,
-            citation=_CITATION,
-            inputs_description=_KWARGS_DESCRIPTION,
-            features=datasets.Features(
+        return evaluate.MetricInfo( # 返回精度指标的信息
+            description=_DESCRIPTION, # 精度指标的描述
+            citation=_CITATION, # 精度指标的引用
+            inputs_description=_KWARGS_DESCRIPTION, # 精度指标的输入描述
+            features=datasets.Features( # 精度指标的特征
                 {
-                    "predictions": datasets.Sequence(datasets.Value("int32")),
-                    "references": datasets.Sequence(datasets.Value("int32")),
+                    "predictions": datasets.Sequence(datasets.Value("int32")), # 预测值
+                    "references": datasets.Sequence(datasets.Value("int32")), # 参考值
                 }
-                if self.config_name == "multilabel"
+                if self.config_name == "multilabel" # 如果是多标签
                 else {
-                    "predictions": datasets.Value("int32"),
-                    "references": datasets.Value("int32"),
+                    "predictions": datasets.Value("int32"), # 预测值
+                    "references": datasets.Value("int32"), # 参考值
                 }
             ),
-            reference_urls=["https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html"],
+            reference_urls=["https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html"], # 精度指标的参考链接
         )
 
     def _compute(self, predictions, references, normalize=True, sample_weight=None): # 定义精度指标的计算函数
         return {
-            "accuracy": float(
-                accuracy_score(references, predictions, normalize=normalize, sample_weight=sample_weight)
+            "accuracy": float( # 精度指标
+                accuracy_score(references, predictions, normalize=normalize, sample_weight=sample_weight) # 计算精度指标
             )
         }

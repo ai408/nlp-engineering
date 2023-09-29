@@ -12,6 +12,6 @@
 (7) [中文情感分类](https://mp.weixin.qq.com/s/kaY83RDXQgIKslHtxLdxkg)  
 (8) [中文句子关系推断](https://mp.weixin.qq.com/s/bGd3LfrFlr47CWEE5YOSlQ)  
 (9) [中文完形填空](https://mp.weixin.qq.com/s/_T7FqQFRkQh-XIqK5aLnqQ)  
-(10) [使用自动模型](https://mp.weixin.qq.com/s/HDeBpvtPGaAplZ5KILC7Hw)
+(10) [使用自动模型](https://mp.weixin.qq.com/s/HDeBpvtPGaAplZ5KILC7Hw)  
 (11) [手动实现Transformer](https://mp.weixin.qq.com/s/DDIGgDro6JqNdCUkvtWwQw)  
 (12) [手动实现BERT]()

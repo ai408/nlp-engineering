@@ -12,6 +12,10 @@
 (11) [手动实现Transformer](https://mp.weixin.qq.com/s/DDIGgDro6JqNdCUkvtWwQw)  
 (12) [手动实现BERT]()
 
+#### 2.NebulaGraph实战  
+(1)[1-NebulaGraph安装和基础操作](https://mp.weixin.qq.com/s/D8ZHvhThkSs7-4OBaTuhjg)  
+(2)[2-NebulaGraph手工和Python操作](https://mp.weixin.qq.com/s/WmABVjQUOWP-KYEcMjTuPg)  
+(3)[3-信息抽取构建知识图谱](https://mp.weixin.qq.com/s/dap4tykIjyLF9HuKqGUmrg)  
 
 #### 公众号：NLP工程化
 专注于Python/C++/CUDA、ML/DL/RL和NLP/KG领域的技术分享  

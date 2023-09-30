@@ -1,25 +1,8 @@
-#!/usr/bin/env python
-# coding=utf-8
-# Copyright 2020 The HuggingFace Inc. team. All rights reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 """
-Fine-tuning the library models for causal language modeling (GPT, GPT-2, CTRL, ...) on a text file or a dataset.
-Here is the full list of checkpoints on the hub that can be fine-tuned by this script:
-https://huggingface.co/models?filter=text-generation
+# 翻译：在文本文件或数据集上对因果语言建模（GPT、GPT-2、CTRL等）的库模型进行微调。
+# 翻译：这是可以通过此脚本进行微调的hub上的检查点的完整列表：https://huggingface.co/models?filter=text-generation
 """
-# You can also adapt this script on your own causal language modeling task. Pointers for this are left as comments.
-
+# 翻译：还可以根据自己的因果语言建模任务调整此脚本。这方面的Pointers留在了评论中。
 import logging
 import math
 import os
@@ -70,9 +53,7 @@ from transformers.utils.versions import require_version
 import pdb
 
 
-# Will error if the minimal version of Transformers is not installed. Remove at your own risks.
-# check_min_version("4.27.0.dev0")
-
+# 翻译：如果未安装transformers的最小版本，将出错。自行决定是否删除。check_min_version("4.27.0.dev0")
 require_version("datasets>=1.8.0", "To fix: pip install -r examples/pytorch/language-modeling/requirements.txt")
 
 logger = logging.getLogger(__name__)
@@ -85,7 +66,7 @@ MODEL_TYPES = tuple(conf.model_type for conf in MODEL_CONFIG_CLASSES)
 @dataclass
 class ModelArguments:
     """
-    Arguments pertaining to which model/config/tokenizer we are going to fine-tune, or train from scratch.
+    翻译：与我们将要微调或从头开始训练的model/config/tokenizer有关的参数。
     """
 
     model_name_or_path: Optional[str] = field(
@@ -235,7 +216,7 @@ class DataTrainingArguments:
     #         if self.validation_files is not None:
     #             extension = self.validation_files[0].split(".")[-1]
     #             assert extension in ["csv", "json", "txt"], "`validation_file` should be a csv, a json or a txt file."
-                
+
 def main():
     # 翻译：请参阅src/transformers/training_args.py中的所有可能参数，或通过将--help标志传递给此脚本。
     # 翻译：现在我们保留了不同的参数集，以便更清晰地分离关注点。
@@ -293,15 +274,9 @@ def main():
     # 初始化模型前设置随机种子
     set_seed(training_args.seed)
 
-    # Get the datasets: you can either provide your own CSV/JSON/TXT training and evaluation files (see below)
-    # or just provide the name of one of the public datasets available on the hub at https://huggingface.co/datasets/
-    # (the dataset will be downloaded automatically from the datasets Hub).
-    #
-    # For CSV/JSON files, this script will use the column called 'text' or the first column if no column called
-    # 'text' is found. You can easily tweak this behavior (see below).
-    #
-    # In distributed training, the load_dataset function guarantee that only one local process can concurrently
-    # download the dataset.
+    # 翻译：获取数据集：您可以提供自己的CSV/JSON/TXT训练和评估文件（见下文），也可以只提供公共数据集之一的名称，这些数据集可以在https://huggingface.co/datasets/（数据集将从datasets Hub自动下载）。
+    # 翻译：对于CSV/JSON文件，此脚本将使用名为“text”的列或第一列（如果没有名为“text”的列）。
+    # 翻译：在分布式训练中，load_dataset函数保证只有一个本地进程可以同时下载数据集。
     if True:
         data_files = {}
         dataset_args = {}
@@ -343,15 +318,10 @@ def main():
                 **dataset_args,
             )
 
-    # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
-    # https://huggingface.co/docs/datasets/loading_datasets.html.
-
-    # Load pretrained model and tokenizer
-    #
-    # Distributed training:
-    # The .from_pretrained methods guarantee that only one local process can concurrently
-    # download model & vocab.
-
+    # 翻译：有关加载任何类型的标准或自定义数据集（从文件、python dict、pandas DataFrame等）的更多信息，请参见https://huggingface.co/docs/datasets/loading_datasets.html。
+    # 翻译：加载预训练模型和标记器
+    # 翻译：分布式训练：
+    # 翻译：.from_pretrained方法保证只有一个本地进程可以同时下载模型和词汇表。
     config_kwargs = {
         "cache_dir": model_args.cache_dir,
         "revision": model_args.model_revision,
@@ -370,11 +340,11 @@ def main():
             logger.info(f"New config: {config}")
 
     tokenizer_kwargs = {
-        "cache_dir": model_args.cache_dir,
-        "use_fast": model_args.use_fast_tokenizer,
-        "revision": model_args.model_revision,
-        "use_auth_token": True if model_args.use_auth_token else None,
-        "padding_side":'left'
+        "cache_dir": model_args.cache_dir,                               # 缓存目录
+        "use_fast": model_args.use_fast_tokenizer,                       # 是否使用快速分词器
+        "revision": model_args.model_revision,                           # 模型版本
+        "use_auth_token": True if model_args.use_auth_token else None,   # 是否使用token
+        "padding_side":'left'                                            # 填充方向
     }
     if model_args.tokenizer_name:
         tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name, **tokenizer_kwargs)
@@ -395,14 +365,14 @@ def main():
         print(torch_dtype)
         torch_dtype = torch.float16
         model = AutoModelForCausalLM.from_pretrained(
-            model_args.model_name_or_path,
-            from_tf=bool(".ckpt" in model_args.model_name_or_path),
-            config=config,
-            cache_dir=model_args.cache_dir,
-            revision=model_args.model_revision,
-            use_auth_token=True if model_args.use_auth_token else None,
-            torch_dtype=torch_dtype,
-            device_map={"": int(os.environ.get("LOCAL_RANK") or 0)}
+            model_args.model_name_or_path,                                 # 模型名称或路径
+            from_tf=bool(".ckpt" in model_args.model_name_or_path),        # 是否从tensorflow加载
+            config=config,                                                 # 配置
+            cache_dir=model_args.cache_dir,                                # 缓存目录
+            revision=model_args.model_revision,                            # 模型版本
+            use_auth_token=True if model_args.use_auth_token else None,    # 是否使用token
+            torch_dtype=torch_dtype,                                       # torch数据类型
+            device_map={"": int(os.environ.get("LOCAL_RANK") or 0)}        # 设备映射
         )
         # model = prepare_model_for_int8_training(model, output_embedding_layer_name="embed_out", layer_norm_names=[])
         
@@ -432,22 +402,21 @@ def main():
     else:
         raise ValueError('输入文件列数不对')
     print('train_on_inputs',train_on_inputs)
-    # since this will be pickled to avoid _LazyModule error in Hasher force logger loading before tokenize_function
     # 翻译：由于这将被pickle以避免哈希器中的_LazyModule错误，因此在tokenize_function之前强制加载记录器
     tok_logger = transformers.utils.logging.get_logger("transformers.tokenization_utils_base")
 
-    def tokenize_function(examples):
+    def tokenize_function(examples): # 标记化函数
         with CaptureLogger(tok_logger) as cl:
             output = tokenizer([ item for item in examples[text_column_name]],truncation=True,max_length=data_args.block_size,padding=False,return_tensors=None)
             output['labels'] = output['input_ids'].copy()
         return output
 
-    def tokenize(prompt):
+    def tokenize(prompt): # 标记化函数
         result = tokenizer(prompt,truncation=True,max_length=data_args.block_size,padding=False,return_tensors=None)
         result["labels"] = result["input_ids"].copy()
         return result
 
-    def generate_and_tokenize_prompt(data_point):
+    def generate_and_tokenize_prompt(data_point): # 生成并标记化提示
         input_text = data_point[input_column_name]
         target_text = data_point[target_column_name]
         full_prompt = input_text+target_text
@@ -510,8 +479,7 @@ def main():
 
         def preprocess_logits_for_metrics(logits, labels):
             if isinstance(logits, tuple):
-                # Depending on the model and config, logits may contain extra tensors,
-                # like past_key_values, but logits always come first
+                # 翻译：根据模型和配置的不同，logits可能包含额外的张量，如past_key_values，但logits始终在第一位
                 logits = logits[0]
             return logits.argmax(dim=-1)
 
@@ -519,8 +487,7 @@ def main():
 
         def compute_metrics(eval_preds):
             preds, labels = eval_preds
-            # preds have the same shape as the labels, after the argmax(-1) has been calculated
-            # by preprocess_logits_for_metrics but we need to shift the labels
+            # 翻译：preds的shape与标签相同，在preprocess_logits_for_metrics计算argmax(-1)之后，但我们需要shift标签
             labels = labels[:, 1:].reshape(-1)
             # .reshape(-1)
             preds = preds[:, :-1].reshape(-1)
@@ -540,17 +507,17 @@ def main():
 
     # 初始化训练器
     trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_dataset if training_args.do_train else None,
-        eval_dataset=eval_dataset if training_args.do_eval else None,
-        tokenizer=tokenizer,
-        # Data collator will default to DataCollatorWithPadding, so we change it.
+        model=model, # 模型
+        args=training_args, # 训练参数
+        train_dataset=train_dataset if training_args.do_train else None, # 训练数据集
+        eval_dataset=eval_dataset if training_args.do_eval else None, # 评估数据集
+        tokenizer=tokenizer, # tokenizer
+        # 数据收集器将默认为DataCollatorWithPadding，因此我们将其更改为DataCollatorForSeq2Seq
         data_collator=transformers.DataCollatorForSeq2Seq(
-            tokenizer, pad_to_multiple_of=8, return_tensors="pt", padding=True
+            tokenizer, pad_to_multiple_of=8, return_tensors="pt", padding=True # 数据收集器
         ),
-        compute_metrics=compute_metrics if training_args.do_eval and not is_torch_tpu_available() else None,
-        preprocess_logits_for_metrics=preprocess_logits_for_metrics if training_args.do_eval and not is_torch_tpu_available()else None,
+        compute_metrics=compute_metrics if training_args.do_eval and not is_torch_tpu_available() else None, # 计算指标
+        preprocess_logits_for_metrics=preprocess_logits_for_metrics if training_args.do_eval and not is_torch_tpu_available()else None, # 预处理logits
     )
 
     # 开始训练

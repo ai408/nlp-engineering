@@ -1,0 +1,276 @@
+D:\Python310\python.exe L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\finetune_clm_lora.py --output_dir ./output_model_lora --model_name_or_path L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf --train_files ../../data/train_sft.csv --validation_files ../../data/dev_sft.csv --do_train --overwrite_output_dir
+[2023-10-01 00:18:59,083] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+NOTE: Redirects are currently not supported in Windows or MacOs.
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin D:\Python310\lib\site-packages\bitsandbytes\libbitsandbytes_cuda118.dll
+CUDA SETUP: CUDA runtime path found: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart64_110.dll
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary D:\Python310\lib\site-packages\bitsandbytes\libbitsandbytes_cuda118.dll...
+10/01/2023 00:19:08 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+10/01/2023 00:19:08 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+    _n_gpu=1,
+    adafactor=False,
+    adam_beta1=0.9,
+    adam_beta2=0.999,
+    adam_epsilon=1e-08,
+    auto_find_batch_size=False,
+    bf16=False,
+    bf16_full_eval=False,
+    data_seed=None,
+    dataloader_drop_last=False,
+    dataloader_num_workers=0,
+    dataloader_pin_memory=True,
+    ddp_backend=None,
+    ddp_broadcast_buffers=None,
+    ddp_bucket_cap_mb=None,
+    ddp_find_unused_parameters=None,
+    ddp_timeout=1800,
+    debug=[],
+    deepspeed=None,
+    disable_tqdm=False,
+    do_eval=False,
+    do_predict=False,
+    do_train=True,
+    eval_accumulation_steps=None,
+    eval_delay=0,
+    eval_steps=None,
+    evaluation_strategy=no,
+    fp16=False,
+    fp16_backend=auto,
+    fp16_full_eval=False,
+    fp16_opt_level=O1,
+    fsdp=[],
+    fsdp_config={'fsdp_min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+    fsdp_min_num_params=0,
+    fsdp_transformer_layer_cls_to_wrap=None,
+    full_determinism=False,
+    gradient_accumulation_steps=1,
+    gradient_checkpointing=False,
+    greater_is_better=None,
+    group_by_length=False,
+    half_precision_backend=auto,
+    hub_model_id=None,
+    hub_private_repo=False,
+    hub_strategy=every_save,
+    hub_token=<HUB_TOKEN>,
+    ignore_data_skip=False,
+    include_inputs_for_metrics=False,
+    jit_mode_eval=False,
+    label_names=None,
+    label_smoothing_factor=0.0,
+    learning_rate=5e-05,
+    length_column_name=length,
+    load_best_model_at_end=False,
+    local_rank=0,
+    log_level=passive,
+    log_level_replica=warning,
+    log_on_each_node=True,
+    logging_dir=./output_model_lora\runs\Oct01_00-19-08_MM-202203161213,
+    logging_first_step=False,
+    logging_nan_inf_filter=True,
+    logging_steps=500,
+    logging_strategy=steps,
+    lr_scheduler_type=linear,
+    max_grad_norm=1.0,
+    max_steps=-1,
+    metric_for_best_model=None,
+    mp_parameters=,
+    no_cuda=False,
+    num_train_epochs=3.0,
+    optim=adamw_hf,
+    optim_args=None,
+    output_dir=./output_model_lora,
+    overwrite_output_dir=True,
+    past_index=-1,
+    per_device_eval_batch_size=8,
+    per_device_train_batch_size=8,
+    prediction_loss_only=False,
+    push_to_hub=False,
+    push_to_hub_model_id=None,
+    push_to_hub_organization=None,
+    push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+    ray_scope=last,
+    remove_unused_columns=True,
+    report_to=['tensorboard'],
+    resume_from_checkpoint=None,
+    run_name=./output_model_lora,
+    save_on_each_node=False,
+    save_safetensors=False,
+    save_steps=500,
+    save_strategy=steps,
+    save_total_limit=None,
+    seed=42,
+    sharded_ddp=[],
+    skip_memory_metrics=True,
+    tf32=None,
+    torch_compile=False,
+    torch_compile_backend=None,
+    torch_compile_mode=None,
+    torchdynamo=None,
+    tpu_metrics_debug=False,
+    tpu_num_cores=None,
+    use_ipex=False,
+    use_legacy_prediction_loop=False,
+    use_mps_device=False,
+    warmup_ratio=0.0,
+    warmup_steps=0,
+    weight_decay=0.0,
+    xpu_backend=None,
+)
+D:\Python310\lib\site-packages\datasets\load.py:2072: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=None' instead.
+  warnings.warn(
+Using custom data configuration default-e0db116953bbde9e
+Loading Dataset Infos from D:\Python310\lib\site-packages\datasets\packaged_modules\csv
+10/01/2023 00:19:10 - INFO - datasets.builder - Using custom data configuration default-e0db116953bbde9e
+10/01/2023 00:19:10 - INFO - datasets.info - Loading Dataset Infos from D:\Python310\lib\site-packages\datasets\packaged_modules\csv
+10/01/2023 00:19:11 - INFO - datasets.builder - Generating dataset csv (L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d)
+10/01/2023 00:19:11 - INFO - datasets.builder - Downloading and preparing dataset csv/default to L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d...
+10/01/2023 00:19:11 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+10/01/2023 00:19:11 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating dataset csv (L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d)
+Downloading and preparing dataset csv/default to L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d...
+Downloading data files: 100%|██████████| 2/2 [00:00<?, ?it/s]
+Downloading took 0.0 min
+Checksum Computation took 0.0 min
+Extracting data files: 100%|██████████| 2/2 [00:00<00:00, 17.08it/s]
+10/01/2023 00:19:11 - INFO - datasets.builder - Generating train split
+Generating train split
+Generating train split: 9861 examples [00:00, 11625.89 examples/s]
+10/01/2023 00:19:12 - INFO - datasets.builder - Generating validation split
+10/01/2023 00:19:12 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Generating validation split
+Generating validation split: 200 examples [00:00, 10956.76 examples/s]
+Unable to verify splits sizes.
+Dataset csv downloaded and prepared to L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d. Subsequent calls will reuse this data.
+[INFO|configuration_utils.py:710] 2023-10-01 00:19:12,601 >> loading configuration file L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf\config.json
+[INFO|configuration_utils.py:768] 2023-10-01 00:19:12,602 >> Model config LlamaConfig {
+  "_name_or_path": "L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.31.0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|tokenization_utils_base.py:1837] 2023-10-01 00:19:12,609 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:1837] 2023-10-01 00:19:12,609 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:1837] 2023-10-01 00:19:12,609 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:1837] 2023-10-01 00:19:12,609 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:1837] 2023-10-01 00:19:12,609 >> loading file tokenizer_config.json
+10/01/2023 00:19:12 - INFO - datasets.builder - Dataset csv downloaded and prepared to L:/20230825_NLP工程化公众号/nlp-engineering/20230916_Llama2-Chinese/train/sft/output_model_lora/dataset_cache/csv/default-e0db116953bbde9e/0.0.0/eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d. Subsequent calls will reuse this data.
+LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type='CAUSAL_LM', inference_mode=False, r=16, target_modules=['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj'], lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None)
+None
+[INFO|modeling_utils.py:2600] 2023-10-01 00:19:12,726 >> loading weights file L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf\model.safetensors.index.json
+[INFO|modeling_utils.py:1172] 2023-10-01 00:19:12,727 >> Instantiating LlamaForCausalLM model under default dtype torch.float16.
+[INFO|configuration_utils.py:599] 2023-10-01 00:19:12,728 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0,
+  "transformers_version": "4.31.0"
+}
+
+[INFO|modeling_utils.py:2715] 2023-10-01 00:19:13,234 >> Detected 8-bit loading: activating 8-bit loading for this model
+Loading checkpoint shards: 100%|██████████| 2/2 [06:17<00:00, 188.74s/it]
+[INFO|modeling_utils.py:3329] 2023-10-01 00:25:31,897 >> All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+[INFO|modeling_utils.py:3337] 2023-10-01 00:25:31,897 >> All the weights of LlamaForCausalLM were initialized from the model checkpoint at L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:559] 2023-10-01 00:25:31,904 >> loading configuration file L:/20230713_HuggingFaceModel/20230903_Llama2/Llama-2-7b-hf\generation_config.json
+[INFO|configuration_utils.py:599] 2023-10-01 00:25:31,904 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "do_sample": true,
+  "eos_token_id": 2,
+  "max_length": 4096,
+  "pad_token_id": 0,
+  "temperature": 0.6,
+  "top_p": 0.9,
+  "transformers_version": "4.31.0"
+}
+
+D:\Python310\lib\site-packages\peft\utils\other.py:122: FutureWarning: prepare_model_for_int8_training is deprecated and will be removed in a future version. Use prepare_model_for_kbit_training instead.
+  warnings.warn(
+train_on_inputs True
+Running tokenizer on dataset:   0%|          | 0/9861 [00:00<?, ? examples/s][WARNING|tokenization_utils_base.py:2471] 2023-10-01 00:25:32,557 >> Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+10/01/2023 00:25:32 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-d15f5c81983d4e89.arrow
+Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-d15f5c81983d4e89.arrow
+Running tokenizer on dataset: 100%|██████████| 9861/9861 [00:05<00:00, 1713.97 examples/s]
+Running tokenizer on dataset:   0%|          | 0/200 [00:00<?, ? examples/s]Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-416646b425e1757e.arrow
+10/01/2023 00:25:38 - INFO - datasets.arrow_dataset - Caching processed dataset at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-416646b425e1757e.arrow
+Running tokenizer on dataset: 100%|██████████| 200/200 [00:00<00:00, 1342.61 examples/s]
+Caching indices mapping at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-8156e8428e27dbc4.arrow
+10/01/2023 00:25:38 - INFO - __main__ - Sample 1824 of the training set: {'input_ids': [1, 1, 12968, 29901, 1346, 30494, 30573, 30287, 30502, 31100, 31076, 30210, 30313, 30024, 30392, 31951, 30502, 30313, 30210, 235, 194, 192, 31376, 30214, 31325, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 31403, 30392, 31195, 31424, 30810, 30287, 235, 194, 192, 31376, 30210, 31057, 236, 151, 177, 30267, 30688, 30672, 31474, 235, 178, 137, 30392, 31084, 30502, 30313, 30783, 30688, 31687, 30210, 31439, 31043, 30503, 30687, 31201, 31101, 30898, 30214, 31473, 233, 142, 175, 30688, 31687, 30210, 30993, 233, 135, 162, 30330, 30846, 31429, 30503, 231, 190, 186, 30959, 235, 170, 133, 30267, 232, 136, 186, 232, 167, 138, 235, 193, 134, 30528, 30210, 30688, 30672, 31474, 235, 178, 137, 30682, 30651, 232, 187, 177, 31931, 30313, 31381, 31100, 31076, 30533, 30743, 31201, 30688, 232, 186, 180, 30210, 31143, 31548, 30503, 234, 162, 176, 31548, 30214, 31174, 31325, 30505, 30502, 30313, 30503, 235, 132, 143, 31729, 30910, 31599, 30275, 232, 132, 157, 30544, 31100, 30592, 31676, 30210, 232, 137, 182, 234, 176, 153, 30267, 30004, 13, 30004, 13, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 31383, 30698, 30505, 30325, 31190, 30486, 31704, 30275, 31695, 234, 190, 176, 30533, 31908, 31579, 30503, 235, 170, 133, 232, 178, 162, 30688, 31687, 30993, 233, 135, 162, 30330, 30448, 30573, 30503, 31579, 31522, 30267, 30980, 30594, 30214, 30953, 31383, 30698, 30415, 30437, 31092, 234, 189, 182, 30688, 232, 186, 180, 30210, 30413, 31722, 30214, 31666, 31267, 31221, 30313, 31174, 30448, 30417, 31944, 30210, 233, 181, 162, 30768, 30267, 31557, 30417, 30505, 30413, 31683, 30533, 233, 145, 165, 31836, 30688, 232, 186, 180, 30210, 30728, 30869, 30793, 30967, 30275, 30214, 31979, 30815, 30848, 30724, 30743, 31201, 30688, 232, 186, 180, 30214, 232, 132, 157, 30544, 31277, 30733, 30688, 31687, 31141, 30940, 30503, 31383, 31376, 30210, 31333, 233, 142, 172, 30267, 30004, 13, 30004, 13, 30004, 13, 31359, 30909, 30651, 30429, 30810, 31559, 30333, 30346, 30728, 31294, 30742, 234, 176, 151, 30383, 30004, 13, 30004, 13, 30573, 231, 190, 131, 31882, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30783, 30909, 30313, 31381, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 30847, 31389, 30908, 30698, 30882, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30682, 30651, 232, 187, 177, 31931, 30313, 31381, 31100, 31076, 30533, 30743, 31201, 30688, 31687, 30210, 31143, 31548, 30503, 234, 162, 176, 31548, 30214, 31174, 31325, 30505, 30502, 30313, 30503, 235, 132, 143, 31729, 30910, 31599, 30275, 232, 132, 157, 30544, 31100, 30592, 31676, 30210, 232, 137, 182, 234, 176, 153, 30267, 31557, 30417, 30743, 31201, 30688, 232, 186, 180, 30210, 30728, 30869, 30793, 30967, 30214, 31979, 30815, 232, 132, 157, 30544, 31277, 30733, 30688, 31687, 31141, 30940, 30503, 31383, 31376, 30210, 31333, 233, 142, 172, 30214, 31594, 31325, 31195, 31424, 31100, 31076, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 30267, 30980, 30594, 30214, 232, 136, 186, 232, 167, 138, 235, 193, 134, 30528, 30210, 30688, 30672, 31474, 235, 178, 137, 31994, 30682, 30651, 232, 165, 161, 232, 191, 189, 30313, 31381, 30210, 30688, 30689, 30503, 232, 137, 182, 234, 176, 153, 30815, 31074, 30214, 232, 187, 177, 31931, 31221, 31381, 31100, 31076, 30533, 31370, 30783, 232, 147, 135, 31893, 233, 143, 148, 233, 139, 155, 30267, 31570, 31389, 30214, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30783, 30909, 30313, 31381, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 235, 138, 182, 31057, 30908, 30698, 30267, 30004, 13, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [1, 1, 12968, 29901, 1346, 30494, 30573, 30287, 30502, 31100, 31076, 30210, 30313, 30024, 30392, 31951, 30502, 30313, 30210, 235, 194, 192, 31376, 30214, 31325, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 31403, 30392, 31195, 31424, 30810, 30287, 235, 194, 192, 31376, 30210, 31057, 236, 151, 177, 30267, 30688, 30672, 31474, 235, 178, 137, 30392, 31084, 30502, 30313, 30783, 30688, 31687, 30210, 31439, 31043, 30503, 30687, 31201, 31101, 30898, 30214, 31473, 233, 142, 175, 30688, 31687, 30210, 30993, 233, 135, 162, 30330, 30846, 31429, 30503, 231, 190, 186, 30959, 235, 170, 133, 30267, 232, 136, 186, 232, 167, 138, 235, 193, 134, 30528, 30210, 30688, 30672, 31474, 235, 178, 137, 30682, 30651, 232, 187, 177, 31931, 30313, 31381, 31100, 31076, 30533, 30743, 31201, 30688, 232, 186, 180, 30210, 31143, 31548, 30503, 234, 162, 176, 31548, 30214, 31174, 31325, 30505, 30502, 30313, 30503, 235, 132, 143, 31729, 30910, 31599, 30275, 232, 132, 157, 30544, 31100, 30592, 31676, 30210, 232, 137, 182, 234, 176, 153, 30267, 30004, 13, 30004, 13, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 31383, 30698, 30505, 30325, 31190, 30486, 31704, 30275, 31695, 234, 190, 176, 30533, 31908, 31579, 30503, 235, 170, 133, 232, 178, 162, 30688, 31687, 30993, 233, 135, 162, 30330, 30448, 30573, 30503, 31579, 31522, 30267, 30980, 30594, 30214, 30953, 31383, 30698, 30415, 30437, 31092, 234, 189, 182, 30688, 232, 186, 180, 30210, 30413, 31722, 30214, 31666, 31267, 31221, 30313, 31174, 30448, 30417, 31944, 30210, 233, 181, 162, 30768, 30267, 31557, 30417, 30505, 30413, 31683, 30533, 233, 145, 165, 31836, 30688, 232, 186, 180, 30210, 30728, 30869, 30793, 30967, 30275, 30214, 31979, 30815, 30848, 30724, 30743, 31201, 30688, 232, 186, 180, 30214, 232, 132, 157, 30544, 31277, 30733, 30688, 31687, 31141, 30940, 30503, 31383, 31376, 30210, 31333, 233, 142, 172, 30267, 30004, 13, 30004, 13, 30004, 13, 31359, 30909, 30651, 30429, 30810, 31559, 30333, 30346, 30728, 31294, 30742, 234, 176, 151, 30383, 30004, 13, 30004, 13, 30573, 231, 190, 131, 31882, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30783, 30909, 30313, 31381, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 30847, 31389, 30908, 30698, 30882, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30682, 30651, 232, 187, 177, 31931, 30313, 31381, 31100, 31076, 30533, 30743, 31201, 30688, 31687, 30210, 31143, 31548, 30503, 234, 162, 176, 31548, 30214, 31174, 31325, 30505, 30502, 30313, 30503, 235, 132, 143, 31729, 30910, 31599, 30275, 232, 132, 157, 30544, 31100, 30592, 31676, 30210, 232, 137, 182, 234, 176, 153, 30267, 31557, 30417, 30743, 31201, 30688, 232, 186, 180, 30210, 30728, 30869, 30793, 30967, 30214, 31979, 30815, 232, 132, 157, 30544, 31277, 30733, 30688, 31687, 31141, 30940, 30503, 31383, 31376, 30210, 31333, 233, 142, 172, 30214, 31594, 31325, 31195, 31424, 31100, 31076, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 30267, 30980, 30594, 30214, 232, 136, 186, 232, 167, 138, 235, 193, 134, 30528, 30210, 30688, 30672, 31474, 235, 178, 137, 31994, 30682, 30651, 232, 165, 161, 232, 191, 189, 30313, 31381, 30210, 30688, 30689, 30503, 232, 137, 182, 234, 176, 153, 30815, 31074, 30214, 232, 187, 177, 31931, 31221, 31381, 31100, 31076, 30533, 31370, 30783, 232, 147, 135, 31893, 233, 143, 148, 233, 139, 155, 30267, 31570, 31389, 30214, 30886, 30939, 30688, 30672, 31474, 235, 178, 137, 30783, 30909, 30313, 31381, 30210, 30502, 30313, 30910, 31599, 30503, 235, 132, 143, 31729, 30910, 31599, 235, 138, 182, 31057, 30908, 30698, 30267, 30004, 13, 2]}.
+10/01/2023 00:25:38 - INFO - __main__ - Sample 409 of the training set: {'input_ids': [1, 1, 12968, 29901, 29871, 29941, 29889, 29871, 31999, 30544, 30904, 30502, 236, 131, 133, 30733, 233, 154, 172, 233, 156, 171, 232, 132, 157, 30210, 234, 177, 131, 233, 155, 150, 234, 148, 159, 231, 191, 192, 30846, 30732, 30267, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 29896, 29889, 29871, 232, 160, 147, 232, 170, 194, 231, 191, 187, 31599, 30383, 31960, 235, 136, 194, 31398, 232, 146, 140, 234, 158, 155, 232, 160, 147, 30214, 231, 191, 187, 31157, 235, 134, 143, 30636, 30214, 231, 189, 149, 30990, 31398, 232, 146, 140, 30880, 31084, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30429, 233, 141, 175, 235, 138, 133, 30214, 234, 191, 150, 233, 136, 165, 232, 191, 178, 31467, 231, 193, 170, 31687, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31997, 30742, 31666, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29906, 29889, 29871, 30457, 31432, 30607, 30383, 30939, 30495, 30214, 31651, 235, 135, 157, 31331, 31651, 31993, 235, 194, 139, 30544, 233, 176, 168, 231, 191, 147, 30214, 31803, 235, 135, 157, 31415, 31331, 31803, 31993, 30214, 31687, 30988, 31331, 31651, 231, 193, 170, 232, 180, 139, 235, 136, 179, 31157, 30780, 31651, 30880, 235, 170, 169, 30533, 30214, 31803, 30880, 31331, 30429, 30214, 31960, 234, 159, 191, 31811, 234, 160, 131, 31803, 30880, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31086, 30742, 30667, 31020, 31433, 30939, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29941, 29889, 29871, 30746, 30858, 30607, 30383, 31960, 235, 135, 157, 31666, 233, 142, 165, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30429, 233, 141, 175, 235, 138, 133, 30214, 234, 191, 150, 233, 136, 165, 31947, 30752, 30557, 235, 188, 181, 30214, 31803, 235, 137, 160, 232, 145, 142, 231, 192, 146, 31803, 235, 133, 172, 235, 137, 131, 30214, 233, 140, 176, 31331, 31803, 31993, 30214, 31651, 235, 138, 133, 233, 147, 176, 30429, 31803, 235, 137, 160, 30214, 31803, 30880, 31182, 30505, 30533, 30429, 30214, 31960, 234, 159, 191, 31811, 234, 160, 131, 31803, 30880, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31086, 30742, 30667, 30805, 232, 170, 194, 232, 141, 194, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29946, 29889, 29871, 234, 138, 152, 30607, 30383, 30939, 30495, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31803, 235, 135, 157, 31331, 30658, 235, 194, 139, 233, 176, 168, 30214, 232, 191, 178, 31467, 31803, 235, 137, 160, 235, 177, 172, 30257, 235, 136, 194, 30982, 31695, 30716, 30606, 30214, 234, 191, 150, 233, 136, 165, 233, 141, 175, 31558, 31960, 235, 138, 133, 30214, 31541, 233, 149, 148, 31687, 30988, 30908, 30869, 30214, 31157, 30780, 233, 135, 162, 30780, 232, 160, 138, 232, 143, 131, 30210, 31543, 231, 191, 187, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29945, 29889, 29871, 30659, 236, 180, 191, 30607, 30383, 232, 160, 147, 30505, 30533, 30429, 30214, 31960, 235, 135, 157, 31666, 31558, 30805, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30658, 232, 131, 193, 233, 153, 159, 30214, 233, 141, 150, 231, 192, 146, 31960, 235, 135, 157, 235, 135, 157, 231, 187, 174, 30214, 234, 191, 150, 233, 136, 165, 31331, 30429, 31543, 30214, 234, 190, 183, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30267, 30004, 13, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [1, 1, 12968, 29901, 29871, 29941, 29889, 29871, 31999, 30544, 30904, 30502, 236, 131, 133, 30733, 233, 154, 172, 233, 156, 171, 232, 132, 157, 30210, 234, 177, 131, 233, 155, 150, 234, 148, 159, 231, 191, 192, 30846, 30732, 30267, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 29896, 29889, 29871, 232, 160, 147, 232, 170, 194, 231, 191, 187, 31599, 30383, 31960, 235, 136, 194, 31398, 232, 146, 140, 234, 158, 155, 232, 160, 147, 30214, 231, 191, 187, 31157, 235, 134, 143, 30636, 30214, 231, 189, 149, 30990, 31398, 232, 146, 140, 30880, 31084, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30429, 233, 141, 175, 235, 138, 133, 30214, 234, 191, 150, 233, 136, 165, 232, 191, 178, 31467, 231, 193, 170, 31687, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31997, 30742, 31666, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29906, 29889, 29871, 30457, 31432, 30607, 30383, 30939, 30495, 30214, 31651, 235, 135, 157, 31331, 31651, 31993, 235, 194, 139, 30544, 233, 176, 168, 231, 191, 147, 30214, 31803, 235, 135, 157, 31415, 31331, 31803, 31993, 30214, 31687, 30988, 31331, 31651, 231, 193, 170, 232, 180, 139, 235, 136, 179, 31157, 30780, 31651, 30880, 235, 170, 169, 30533, 30214, 31803, 30880, 31331, 30429, 30214, 31960, 234, 159, 191, 31811, 234, 160, 131, 31803, 30880, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31086, 30742, 30667, 31020, 31433, 30939, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29941, 29889, 29871, 30746, 30858, 30607, 30383, 31960, 235, 135, 157, 31666, 233, 142, 165, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30429, 233, 141, 175, 235, 138, 133, 30214, 234, 191, 150, 233, 136, 165, 31947, 30752, 30557, 235, 188, 181, 30214, 31803, 235, 137, 160, 232, 145, 142, 231, 192, 146, 31803, 235, 133, 172, 235, 137, 131, 30214, 233, 140, 176, 31331, 31803, 31993, 30214, 31651, 235, 138, 133, 233, 147, 176, 30429, 31803, 235, 137, 160, 30214, 31803, 30880, 31182, 30505, 30533, 30429, 30214, 31960, 234, 159, 191, 31811, 234, 160, 131, 31803, 30880, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31086, 30742, 30667, 30805, 232, 170, 194, 232, 141, 194, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29946, 29889, 29871, 234, 138, 152, 30607, 30383, 30939, 30495, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31803, 235, 135, 157, 31331, 30658, 235, 194, 139, 233, 176, 168, 30214, 232, 191, 178, 31467, 31803, 235, 137, 160, 235, 177, 172, 30257, 235, 136, 194, 30982, 31695, 30716, 30606, 30214, 234, 191, 150, 233, 136, 165, 233, 141, 175, 31558, 31960, 235, 138, 133, 30214, 31541, 233, 149, 148, 31687, 30988, 30908, 30869, 30214, 31157, 30780, 233, 135, 162, 30780, 232, 160, 138, 232, 143, 131, 30210, 31543, 231, 191, 187, 30214, 30982, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30214, 31516, 30822, 30908, 31810, 232, 146, 169, 30287, 31993, 30267, 30004, 13, 29945, 29889, 29871, 30659, 236, 180, 191, 30607, 30383, 232, 160, 147, 30505, 30533, 30429, 30214, 31960, 235, 135, 157, 31666, 31558, 30805, 30214, 31947, 232, 148, 191, 232, 147, 187, 30214, 31331, 30658, 232, 131, 193, 233, 153, 159, 30214, 233, 141, 150, 231, 192, 146, 31960, 235, 135, 157, 235, 135, 157, 231, 187, 174, 30214, 234, 191, 150, 233, 136, 165, 31331, 30429, 31543, 30214, 234, 190, 183, 31695, 29896, 29900, 29899, 29896, 29945, 234, 170, 149, 30267, 30004, 13, 2]}.
+10/01/2023 00:25:38 - INFO - __main__ - Sample 4506 of the training set: {'input_ids': [1, 1, 12968, 29901, 29871, 30486, 30494, 30287, 31688, 31479, 31999, 232, 135, 194, 234, 174, 168, 30210, 234, 174, 168, 235, 179, 166, 30267, 30004, 13, 31710, 30667, 30429, 30210, 30446, 234, 193, 141, 30214, 235, 134, 153, 232, 155, 162, 232, 155, 162, 30210, 235, 135, 187, 235, 158, 142, 30267, 232, 149, 172, 232, 149, 172, 232, 149, 172, 30214, 232, 151, 180, 31688, 31173, 30214, 233, 175, 165, 31616, 31471, 236, 132, 144, 30928, 30806, 31044, 30525, 30267, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 30446, 236, 187, 162, 232, 135, 194, 236, 166, 161, 236, 132, 144, 30408, 30214, 233, 161, 160, 31584, 232, 151, 180, 31173, 30848, 31076, 232, 147, 175, 30267, 30004, 13, 232, 152, 193, 232, 152, 193, 232, 152, 193, 30214, 31616, 232, 166, 179, 232, 193, 142, 30846, 30214, 235, 177, 172, 30672, 31381, 30287, 31558, 235, 186, 182, 235, 186, 134, 233, 175, 165, 232, 189, 137, 30267, 30004, 13, 30446, 232, 136, 151, 30319, 31704, 233, 182, 191, 235, 186, 182, 30214, 235, 131, 182, 233, 159, 184, 31143, 31050, 31141, 232, 139, 174, 232, 169, 156, 30267, 30004, 13, 232, 154, 153, 232, 154, 153, 232, 154, 153, 30214, 233, 175, 165, 232, 194, 174, 232, 168, 151, 235, 186, 148, 30214, 235, 177, 172, 30672, 31381, 235, 186, 162, 234, 160, 131, 30287, 31558, 235, 186, 182, 30267, 30004, 13, 30446, 234, 143, 173, 234, 143, 173, 233, 137, 171, 233, 137, 171, 234, 175, 148, 30214, 31687, 30429, 30210, 235, 133, 140, 235, 133, 140, 30801, 31516, 30923, 30267, 30004, 13, 232, 150, 191, 232, 150, 191, 232, 150, 191, 30214, 235, 139, 149, 31520, 30732, 31616, 30214, 235, 177, 172, 30672, 31381, 30287, 31558, 236, 156, 185, 236, 137, 140, 30505, 232, 194, 174, 31616, 30210, 30793, 30967, 30755, 30267, 30004, 13, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': [1, 1, 12968, 29901, 29871, 30486, 30494, 30287, 31688, 31479, 31999, 232, 135, 194, 234, 174, 168, 30210, 234, 174, 168, 235, 179, 166, 30267, 30004, 13, 31710, 30667, 30429, 30210, 30446, 234, 193, 141, 30214, 235, 134, 153, 232, 155, 162, 232, 155, 162, 30210, 235, 135, 187, 235, 158, 142, 30267, 232, 149, 172, 232, 149, 172, 232, 149, 172, 30214, 232, 151, 180, 31688, 31173, 30214, 233, 175, 165, 31616, 31471, 236, 132, 144, 30928, 30806, 31044, 30525, 30267, 30004, 13, 2, 1, 4007, 22137, 29901, 29871, 30446, 236, 187, 162, 232, 135, 194, 236, 166, 161, 236, 132, 144, 30408, 30214, 233, 161, 160, 31584, 232, 151, 180, 31173, 30848, 31076, 232, 147, 175, 30267, 30004, 13, 232, 152, 193, 232, 152, 193, 232, 152, 193, 30214, 31616, 232, 166, 179, 232, 193, 142, 30846, 30214, 235, 177, 172, 30672, 31381, 30287, 31558, 235, 186, 182, 235, 186, 134, 233, 175, 165, 232, 189, 137, 30267, 30004, 13, 30446, 232, 136, 151, 30319, 31704, 233, 182, 191, 235, 186, 182, 30214, 235, 131, 182, 233, 159, 184, 31143, 31050, 31141, 232, 139, 174, 232, 169, 156, 30267, 30004, 13, 232, 154, 153, 232, 154, 153, 232, 154, 153, 30214, 233, 175, 165, 232, 194, 174, 232, 168, 151, 235, 186, 148, 30214, 235, 177, 172, 30672, 31381, 235, 186, 162, 234, 160, 131, 30287, 31558, 235, 186, 182, 30267, 30004, 13, 30446, 234, 143, 173, 234, 143, 173, 233, 137, 171, 233, 137, 171, 234, 175, 148, 30214, 31687, 30429, 30210, 235, 133, 140, 235, 133, 140, 30801, 31516, 30923, 30267, 30004, 13, 232, 150, 191, 232, 150, 191, 232, 150, 191, 30214, 235, 139, 149, 31520, 30732, 31616, 30214, 235, 177, 172, 30672, 31381, 30287, 31558, 236, 156, 185, 236, 137, 140, 30505, 232, 194, 174, 31616, 30210, 30793, 30967, 30755, 30267, 30004, 13, 2]}.
+10/01/2023 00:25:38 - INFO - datasets.arrow_dataset - Caching indices mapping at L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\output_model_lora\dataset_cache\csv\default-e0db116953bbde9e\0.0.0\eea64c71ca8b46dd3f537ed218fc9bf495d5707789152eb2764f5c78fa66d59d\cache-8156e8428e27dbc4.arrow
+trainable params: 39,976,960 || all params: 6,778,392,576 || trainable%: 0.589770503135875
+[INFO|trainer.py:386] 2023-10-01 00:26:44,456 >> You have loaded a model on multiple GPUs. `is_model_parallel` attribute will be force-set to `True` to avoid any unexpected behavior such as device placement mismatching.
+[INFO|trainer.py:394] 2023-10-01 00:26:44,456 >> The model is loaded in 8-bit precision. To train this model you need to add additional modules inside the model such as adapters using `peft` library and freeze the model weights. Please check  the examples in https://github.com/huggingface/peft for more details.
+D:\Python310\lib\site-packages\transformers\optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[INFO|trainer.py:1686] 2023-10-01 00:26:44,665 >> ***** Running training *****
+[INFO|trainer.py:1687] 2023-10-01 00:26:44,665 >>   Num examples = 9,861
+[INFO|trainer.py:1688] 2023-10-01 00:26:44,665 >>   Num Epochs = 3
+[INFO|trainer.py:1689] 2023-10-01 00:26:44,665 >>   Instantaneous batch size per device = 8
+[INFO|trainer.py:1692] 2023-10-01 00:26:44,666 >>   Total train batch size (w. parallel, distributed & accumulation) = 8
+[INFO|trainer.py:1693] 2023-10-01 00:26:44,666 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1694] 2023-10-01 00:26:44,666 >>   Total optimization steps = 3,699
+[INFO|trainer.py:1695] 2023-10-01 00:26:44,673 >>   Number of trainable parameters = 39,976,960
+  0%|          | 0/3699 [00:00<?, ?it/s][WARNING|logging.py:280] 2023-10-01 00:26:45,057 >> You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[WARNING|logging.py:295] 2023-10-01 00:26:45,095 >> `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+D:\Python310\lib\site-packages\bitsandbytes\autograd\_functions.py:318: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+  0%|          | 6/3699 [00:57<8:40:16,  8.45s/it]Traceback (most recent call last):
+  File "L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\finetune_clm_lora.py", line 690, in <module>
+  File "L:\20230825_NLP工程化公众号\nlp-engineering\20230916_Llama2-Chinese\train\sft\finetune_clm_lora.py", line 651, in main
+    metrics["perplexity"] = perplexity
+  File "D:\Python310\lib\site-packages\transformers\trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "D:\Python310\lib\site-packages\transformers\trainer.py", line 1809, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "D:\Python310\lib\site-packages\transformers\trainer.py", line 2665, in training_step
+    self.accelerator.backward(loss)
+  File "D:\Python310\lib\site-packages\accelerate\accelerator.py", line 1853, in backward
+    loss.backward(**kwargs)
+  File "D:\Python310\lib\site-packages\torch\_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "D:\Python310\lib\site-packages\torch\autograd\__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "D:\Python310\lib\site-packages\torch\autograd\function.py", line 274, in apply
+    return user_fn(self, *args)
+  File "D:\Python310\lib\site-packages\torch\utils\checkpoint.py", line 157, in backward
+    torch.autograd.backward(outputs_with_grad, args_with_grad)
+  File "D:\Python310\lib\site-packages\torch\autograd\__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.25 GiB (GPU 0; 24.00 GiB total capacity; 18.62 GiB already allocated; 0 bytes free; 22.84 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+  0%|          | 6/3699 [01:05<11:07:36, 10.85s/it]
+
+Process finished with exit code 1
+说明：显存不够kill了。

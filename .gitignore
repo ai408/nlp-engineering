@@ -162,3 +162,8 @@ cython_debug/
 # 注意以arrow结尾的文件
 *.arrow
 *.json
+
+# 数据集缓存和模型输出
+dataset_cache/
+output_model/
+output_model_lora/

@@ -30,7 +30,8 @@
 (2) [2.1-Atom-7B预训练](https://mp.weixin.qq.com/s/HZi7tpEh5K03-juSSB90SQ)  
 (3) [2.2-大语言模型词表扩充](https://mp.weixin.qq.com/s/8_Y-GX8BdWM38VvcWVTHUQ)  
 (4) [2.3-预训练使用QA还是Text数据集](https://mp.weixin.qq.com/s/saIPH1vk5CBbD11DhVsctw)  
-
+(5) [3.1-全量参数微调](https://mp.weixin.qq.com/s/IPHpSUZ3HAcFALjzjhsWkw)  
+(6) [3.2-LoRA微调和模型量化](https://mp.weixin.qq.com/s/0f-blEY0z0cu1bq3VZj6qw)  
 
 #### 5.LLM从理论到实践  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  

@@ -87,7 +87,7 @@ def train():
     # 将模型切换到训练模式
     model.train()
     # 按批次遍历训练集中的数据
-    for epoch in range(5):
+    for epoch in range(1):
         # 按批次遍历训练集中的数据
         for i, (input_ids, attention_mask, token_type_ids, labels) in enumerate(loader):
             # 模型计算
@@ -104,6 +104,7 @@ def train():
                 accuracy = (out == labels).sum().item() / len(labels) # 计算准确率
                 lr = optimizer.state_dict()['param_groups'][0]['lr'] # 获取当前学习率
                 print(epoch, 1, loss.item(), lr, accuracy)
+    torch.save(model, '中文句子关系推断model.bin') # 保存模型
 
 
 # 测试
@@ -155,7 +156,7 @@ if __name__ == '__main__':
 
     # ###################################################################################################################
     # 加载数据集
-    dataset = Dataset('train')
+    dataset = Dataset('train')[:10]
     # sentence1, sentence2, label = dataset[7]
     # print(len(dataset), sentence1, sentence2, label)
     # print(sentence2)
@@ -215,4 +216,8 @@ if __name__ == '__main__':
     # ###################################################################################################################
     # 训练和测试模型
     train()
+    # test()
+
+    # 加载模型
+    model = torch.load('中文句子关系推断model.bin')
     test()

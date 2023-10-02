@@ -241,7 +241,7 @@ if __name__ == '__main__':
         first_weight = base_model.model.layers[0].self_attn.q_proj.weight # 第一个权重
         first_weight_old = first_weight.clone() # 第一个权重的克隆
 
-        if hasattr(peft.LoraModel, 'merge_and_unload'): # 如果有merge_and_unload方法
+        if hasattr(peft.LoraModel, 'merge_and_unload'): # 如果有merge_and_unload方法，将lora model和base model合并为一个独立的model
             lora_model = PeftModel.from_pretrained(
                 base_model, # 基础模型
                 lora_model_path, # LoRA模型路径
@@ -286,10 +286,7 @@ if __name__ == '__main__':
 
     if output_type == 'huggingface': # huggingface格式
         print("Saving to Hugging Face format...") # 保存为Hugging Face格式
-        LlamaForCausalLM.save_pretrained(
-            base_model, output_dir, save_function=torch.save,
-            max_shard_size="2GB" # 最大分片大小
-        )  # state_dict=deloreanized_sd)
+        LlamaForCausalLM.save_pretrained(base_model, output_dir, save_function=torch.save, max_shard_size="2GB")  # max_shard_size表示最大分片大小
     else: # pth格式
         print("Saving to pth format...") # 保存为pth格式
 

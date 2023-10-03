@@ -32,10 +32,25 @@
 (4) [2.3-预训练使用QA还是Text数据集](https://mp.weixin.qq.com/s/saIPH1vk5CBbD11DhVsctw)  
 (5) [3.1-全量参数微调](https://mp.weixin.qq.com/s/IPHpSUZ3HAcFALjzjhsWkw)  
 (6) [3.2-LoRA微调和模型量化](https://mp.weixin.qq.com/s/0f-blEY0z0cu1bq3VZj6qw)  
+(7) [4-量化模型](https://mp.weixin.qq.com/s/YOeLxwCmy8jdiPgw9Fjreg)
+
 
 #### 5.LLM从理论到实践  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  
 (2) [2-绪论](https://mp.weixin.qq.com/s/GG6DCVcojVifCbV9XWNCOA)  
+
+
+#### 6.CUDA C权威编程指南   
+(1) [1-基于CUDA的异构并行计算](https://mp.weixin.qq.com/s/NUny15cOu1A0wi7MFM72xw)  
+(2) [1.1-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/JA04qbWnsqDhRlDtPba_Hw)  
+(3) [1.2-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/coxZC1Mhww0vuGX9B1TQZQ)  
+(4) [1.3-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/vZYdCwaQoQT3b_emSAlDzw) 
+
+
+#### 7.Boost程序库完全开发指南    
+(1) [1-开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
+(2) [1.1-C++基础知识点梳理](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
+(3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)
 
 
 #### 公众号：NLP工程化

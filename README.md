@@ -32,7 +32,11 @@
 (4) [2.3-预训练使用QA还是Text数据集](https://mp.weixin.qq.com/s/saIPH1vk5CBbD11DhVsctw)  
 (5) [3.1-全量参数微调](https://mp.weixin.qq.com/s/IPHpSUZ3HAcFALjzjhsWkw)  
 (6) [3.2-LoRA微调和模型量化](https://mp.weixin.qq.com/s/0f-blEY0z0cu1bq3VZj6qw)  
-(7) [4-量化模型](https://mp.weixin.qq.com/s/YOeLxwCmy8jdiPgw9Fjreg)
+(7) [4-量化模型](https://mp.weixin.qq.com/s/YOeLxwCmy8jdiPgw9Fjreg)  
+(8) [5-推理加速](https://mp.weixin.qq.com/s/YP2unHPxQC44q7Y9IK0zzg)  
+(9) [6-模型评测](https://mp.weixin.qq.com/s/oBW0KlOwCMWnrpdcscZzhQ)  
+(10) [7-外延能力LangChain集成](https://mp.weixin.qq.com/s/-FVoE5Qp_vAUe4zjXrR5wg)  
+(11) [8-TRL资料整理](https://mp.weixin.qq.com/s/ZLhT1oU2fGUBU2GRou-8ew)  
 
 
 #### 5.LLM从理论到实践  

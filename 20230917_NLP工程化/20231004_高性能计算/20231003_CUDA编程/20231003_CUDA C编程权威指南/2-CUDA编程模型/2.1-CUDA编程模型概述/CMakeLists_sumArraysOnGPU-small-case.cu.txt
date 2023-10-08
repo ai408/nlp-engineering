@@ -1,0 +1,9 @@
+# 为sumArraysOnHost.c写CMakeLists.txt
+cmake_minimum_required(VERSION 3.26) # CMake版本要求，VERSION是版本，3.26是3.26版本
+project(20231003_ClionProgram CUDA) # 项目名称，CUDA是CUDA项目
+
+set(CMAKE_CUDA_STANDARD 17) # C++标准，CMAKE_CUDA_STANDARD是C++标准，17是C++17
+
+add_executable(20231003_ClionProgram chapter2/sumArraysOnGPU-small-case.cu) # 可执行文件
+
+set_target_properties(20231003_ClionProgram PROPERTIES CUDA_SEPARABLE_COMPILATION ON) # 设置可分离编译，PROPERTIES是属性，CUDA_SEPARABLE_COMPILATION是可分离编译，ON是开启

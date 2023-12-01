@@ -168,7 +168,7 @@ dataset_cache/
 output_model/
 output_model_lora/
 merge_llama_with_lora_output/
-20230916_Llama2-Chinese/tools/checkpoint-500/
-20230916_Llama2-Chinese/tools/merge_llama_with_lora_hf_output/
-20230916_Llama2-Chinese/tools/merge_llama_with_lora_pt_output/
-20230916_Llama2-Chinese/tools/llama2_quantize_AutoGPTQ/
+Llama2-Chinese/tools/checkpoint-500/
+Llama2-Chinese/tools/merge_llama_with_lora_hf_output/
+Llama2-Chinese/tools/merge_llama_with_lora_pt_output/
+Llama2-Chinese/tools/llama2_quantize_AutoGPTQ/

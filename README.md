@@ -1,4 +1,6 @@
 ### 编程语言-Python编程
+#### TODO 
+<br>
 
 
 ### 编程语言-C++编程
@@ -6,6 +8,7 @@
 (1) [1-开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
 (2) [1.1-C++基础知识点梳理](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
 (3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)
+<br>
 
 
 ### 编程语言-CUDA编程
@@ -14,18 +17,27 @@
 (2) [1.1-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/JA04qbWnsqDhRlDtPba_Hw)  
 (3) [1.2-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/coxZC1Mhww0vuGX9B1TQZQ)  
 (4) [1.3-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/vZYdCwaQoQT3b_emSAlDzw)  
+<br>
 
 
 ### 编程语言-网络爬虫编程
+#### TODO
+<br>
 
 
 ### 统计学习-机器学习
+#### TODO
+<br>
 
 
 ### 统计学习-深度学习
+#### TODO
+<br>
 
 
 ### 统计学习-强化学习
+#### TODO
+<br>
 
 
 ### 知识工程-知识图谱
@@ -33,9 +45,12 @@
 (1) [1-NebulaGraph安装和基础操作](https://mp.weixin.qq.com/s/D8ZHvhThkSs7-4OBaTuhjg)  
 (2) [2-NebulaGraph手工和Python操作](https://mp.weixin.qq.com/s/WmABVjQUOWP-KYEcMjTuPg)  
 (3) [3-信息抽取构建知识图谱](https://mp.weixin.qq.com/s/dap4tykIjyLF9HuKqGUmrg) 
+<br>
 
 
 ### 知识工程-对话系统
+#### TODO
+<br>
 
 
 ### 知识工程-大语言模型
@@ -51,15 +66,18 @@
 (9) [6-模型评测](https://mp.weixin.qq.com/s/oBW0KlOwCMWnrpdcscZzhQ)  
 (10) [7-外延能力LangChain集成](https://mp.weixin.qq.com/s/-FVoE5Qp_vAUe4zjXrR5wg)  
 (11) [8-TRL资料整理](https://mp.weixin.qq.com/s/ZLhT1oU2fGUBU2GRou-8ew)  
+<br>
 
 #### 《Langchain-Chatchat项目》  
 (1) [1-整体介绍](https://mp.weixin.qq.com/s/hp0N94aUxt-r24XvZvjx3Q)  
 (2) [1.1-ChatGLM2项目整体介绍](https://mp.weixin.qq.com/s/PQMcYtV2CLLZkdA1C2kqWg)  
 (3) [1.2-Baichuan2项目整体介绍](https://mp.weixin.qq.com/s/dDjtQ8hC2FR48w3tzNwuCQ)  
+<br>
 
 #### 《LLM从理论到实践》  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  
 (2) [2-绪论](https://mp.weixin.qq.com/s/GG6DCVcojVifCbV9XWNCOA)  
+<br>
 
 
 ### 知识工程-自然语言处理
@@ -78,6 +96,7 @@
 (12) [手动实现Transformer](https://mp.weixin.qq.com/s/DDIGgDro6JqNdCUkvtWwQw)  
 (13) [手动实现BERT](https://mp.weixin.qq.com/s/T4jgfJsuY3GZqDXXRDHyYg)  
 (14) [利用Hugging Face中的模型进行句子相似性实践](https://mp.weixin.qq.com/s/NBwBC_Z3Xa_pmN1zD_OIxA)  
+<br>
 
 
 ### 公众号：NLP工程化

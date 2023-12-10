@@ -7,7 +7,7 @@
 #### 《Boost程序库完全开发指南》    
 (1) [1-开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
 (2) [1.1-C++基础知识点梳理](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
-(3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)
+(3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)  
 <br>
 
 
@@ -44,7 +44,7 @@
 #### 《NebulaGraph实战》  
 (1) [1-NebulaGraph安装和基础操作](https://mp.weixin.qq.com/s/D8ZHvhThkSs7-4OBaTuhjg)  
 (2) [2-NebulaGraph手工和Python操作](https://mp.weixin.qq.com/s/WmABVjQUOWP-KYEcMjTuPg)  
-(3) [3-信息抽取构建知识图谱](https://mp.weixin.qq.com/s/dap4tykIjyLF9HuKqGUmrg) 
+(3) [3-信息抽取构建知识图谱](https://mp.weixin.qq.com/s/dap4tykIjyLF9HuKqGUmrg)  
 <br>
 
 

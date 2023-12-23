@@ -25,6 +25,8 @@
 <br>
 
 
+
+
 ### 统计学习-机器学习
 #### TODO
 <br>
@@ -40,6 +42,8 @@
 <br>
 
 
+
+
 ### 知识工程-知识图谱
 #### 《NebulaGraph实战》  
 (1) [1-NebulaGraph安装和基础操作](https://mp.weixin.qq.com/s/D8ZHvhThkSs7-4OBaTuhjg)  
@@ -49,7 +53,8 @@
 
 
 ### 知识工程-对话系统
-#### TODO
+#### 《公众号文章》  
+[RasaGPT对话系统的工作原理](https://z0yrmerhgi8.feishu.cn/wiki/OW0ew9LxhiR7dlkEJT7cD8Gmnbh?from=from_copylink)  
 <br>
 
 
@@ -78,6 +83,9 @@
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  
 (2) [2-绪论](https://mp.weixin.qq.com/s/GG6DCVcojVifCbV9XWNCOA)  
 <br>
+
+#### 《公众号文章》  
+[使用vLLM和ChatGLM3-6b批量推理](https://z0yrmerhgi8.feishu.cn/wiki/UF2LwNt1xiwpwBkGHwKcmWiyn5e?from=from_copylink)  
 
 
 ### 知识工程-自然语言处理

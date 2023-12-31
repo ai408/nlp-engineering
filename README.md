@@ -1,8 +1,13 @@
 ### 编程语言-Python编程
+#### 《Python2源码剖析》  
+___
 #### 《Python3源码剖析》  
 (1) [Python3.7源码编译](https://mp.weixin.qq.com/s/ayEkibjeGuFPDRCmrmoj-g)  
 ___
 #### 《公众号文章》  
+(1) [Python 3.9.13安装过程](https://z0yrmerhgi8.feishu.cn/wiki/GSiMwYhCAi8tPwkaKHyc5gS6nGh)  
+(2) [种依赖管理工具实现requirements.txt文件生成](https://z0yrmerhgi8.feishu.cn/wiki/DsJQw9nJbiYO5RkHnbyc9mHVnY3)  
+(3) [python -m http.server在本地启动简单HTTP服务器的命令](https://z0yrmerhgi8.feishu.cn/wiki/FRUewak4liaRVpkjq6JcnYZbnie)  
 <br><br>
 
 

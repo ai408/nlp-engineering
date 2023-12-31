@@ -1,6 +1,9 @@
 ### 编程语言-Python编程
-#### TODO 
-<br>
+#### 《Python3源码剖析》  
+(1) [Python3.7源码编译](https://mp.weixin.qq.com/s/ayEkibjeGuFPDRCmrmoj-g)  
+___
+#### 《公众号文章》  
+<br><br>
 
 
 ### 编程语言-C++编程
@@ -8,7 +11,9 @@
 (1) [1-开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
 (2) [1.1-C++基础知识点梳理](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
 (3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)  
-<br>
+___
+#### 《公众号文章》  
+<br><br>
 
 
 ### 编程语言-CUDA编程
@@ -17,29 +22,53 @@
 (2) [1.1-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/JA04qbWnsqDhRlDtPba_Hw)  
 (3) [1.2-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/coxZC1Mhww0vuGX9B1TQZQ)  
 (4) [1.3-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/vZYdCwaQoQT3b_emSAlDzw)  
-<br>
+___
+#### 《DeepSpeed框架》  
+(1) [大纲和资料梳理](https://z0yrmerhgi8.feishu.cn/wiki/HGR2wLfXeiCKo4k7SYrcRAIPnUd)  
+___
+#### 《公众号文章》  
+<br><br>
 
 
 ### 编程语言-网络爬虫编程
 #### TODO
-<br>
+___
+#### 《公众号文章》
+<br><br>
 
 
 
 
 ### 统计学习-机器学习
 #### TODO
-<br>
+___
+#### 《公众号文章》  
+[MIT线性代数中文笔记](https://mp.weixin.qq.com/s/w_HLylkipNAsf8is3usIoQ)  
+[标准化、归一化和正则化的关系](https://mp.weixin.qq.com/s/VHeCtrE-6MlSx1_M3GbYAA)  
+[机器学习(公式推导与代码实现)--sklearn机器学习库](https://mp.weixin.qq.com/s/lJADoABjMFxuKmdOWX04lw)  
+[基于Python3实现的统计分析包Pingouin](https://mp.weixin.qq.com/s/JWNEcRiQ_t2FDMN_dJpR_Q)  
+[典型相关分析CCA计算过程](https://mp.weixin.qq.com/s/s8jjJ-Js0PpiN8NA44IqnA)  
+[SPSS统计教程：卡方检验](https://mp.weixin.qq.com/s/4khzo6Zpbe9jochFaTKuaw)  
+[对抛硬币试验中后验概率的理解](https://mp.weixin.qq.com/s/pBHF0MWG-Jz9CLdEbRX6Kw)  
+[对p值的理解](https://mp.weixin.qq.com/s/zCoIIbilmFrlnN1zPsYn8w)  
+<br><br>
 
 
 ### 统计学习-深度学习
 #### TODO
-<br>
+___
+#### 《公众号文章》  
+[PyTorch中的CUDA操作](https://mp.weixin.qq.com/s/73GwrPD_CAE4C3z5I4VxKw)  
+[多层前馈神经网络及BP算法](https://mp.weixin.qq.com/s/-lw-1OketbohE5e41-_Duw)  
+[使用TorchLens可视化一个简单的神经网络](https://mp.weixin.qq.com/s/CZY06yLByRbsKP8p6t32kQ)  
+<br><br>
 
 
 ### 统计学习-强化学习
 #### TODO
-<br>
+___
+#### 《公众号文章》  
+<br><br>
 
 
 
@@ -49,13 +78,28 @@
 (1) [1-NebulaGraph安装和基础操作](https://mp.weixin.qq.com/s/D8ZHvhThkSs7-4OBaTuhjg)  
 (2) [2-NebulaGraph手工和Python操作](https://mp.weixin.qq.com/s/WmABVjQUOWP-KYEcMjTuPg)  
 (3) [3-信息抽取构建知识图谱](https://mp.weixin.qq.com/s/dap4tykIjyLF9HuKqGUmrg)  
-<br>
+___
+#### 《公众号文章》  
+<br><br>
 
 
-### 知识工程-对话系统
+### 知识工程-对话系统  
+#### 《Rasa3实战》  
+(1) [聊天机器人框架Rasa资源整理](https://z0yrmerhgi8.feishu.cn/wiki/D5Lew7M5riSHknkAfeJcuwmenmC)  
+___
+#### 《Rasa3源码剖析》  
+(1) [报时机器人的rasa shell执行流程分析](https://z0yrmerhgi8.feishu.cn/wiki/CvASwk5SmiYkCXkqONycSxVfnJg)  
+(2) [Rasa NLU中的组件](https://z0yrmerhgi8.feishu.cn/wiki/PVExwN0KIiF1UKkIl1NcaojUnJd)  
+(3) [使用ResponseSelector实现校园招聘FAQ机器人](https://z0yrmerhgi8.feishu.cn/wiki/RAARwLUWAibAySkKSK0cLtHRnLd)  
+(4) [rasa train nlu详解：1.1-train_nlu()函数](https://z0yrmerhgi8.feishu.cn/wiki/OHHgwxfmIi4avjkSsbuch5panXg)  
+(5) [rasa train nlu详解：1.2-_train_graph()函数](https://z0yrmerhgi8.feishu.cn/wiki/O33Hw3VD4idjICkIy56cOAw6nHc)  
+(6) [自定义Graph Component：1-开发指南](https://z0yrmerhgi8.feishu.cn/wiki/EF19wNYNTiUO87k6PI4catzHnkg)  
+(7) [自定义Graph Component：1.1-JiebaTokenizer具体实现](https://z0yrmerhgi8.feishu.cn/wiki/FdciwqM78iadlnk5dDWcir0Rnx2)  
+(8) [自定义Graph Component：1.2-其它Tokenizer具体实现](https://z0yrmerhgi8.feishu.cn/wiki/RjOowXvMIi9RamkvmbvcDVYanFe)  
+___
 #### 《公众号文章》  
 [RasaGPT对话系统的工作原理](https://z0yrmerhgi8.feishu.cn/wiki/OW0ew9LxhiR7dlkEJT7cD8Gmnbh?from=from_copylink)  
-<br>
+<br><br>
 
 
 ### 知识工程-大语言模型
@@ -71,21 +115,25 @@
 (9) [6-模型评测](https://mp.weixin.qq.com/s/oBW0KlOwCMWnrpdcscZzhQ)  
 (10) [7-外延能力LangChain集成](https://mp.weixin.qq.com/s/-FVoE5Qp_vAUe4zjXrR5wg)  
 (11) [8-TRL资料整理](https://mp.weixin.qq.com/s/ZLhT1oU2fGUBU2GRou-8ew)  
-<br>
-
+___
 #### 《Langchain-Chatchat项目》  
 (1) [1-整体介绍](https://mp.weixin.qq.com/s/hp0N94aUxt-r24XvZvjx3Q)  
 (2) [1.1-ChatGLM2项目整体介绍](https://mp.weixin.qq.com/s/PQMcYtV2CLLZkdA1C2kqWg)  
 (3) [1.2-Baichuan2项目整体介绍](https://mp.weixin.qq.com/s/dDjtQ8hC2FR48w3tzNwuCQ)  
-<br>
-
+(4) [通过GPT2模型来检索NebulaGraph](https://z0yrmerhgi8.feishu.cn/wiki/LigvwEVC3iQClOkNKL2ce3c2nhc)  
+(5) [Langchain计算器工具Agent思路和实现](https://z0yrmerhgi8.feishu.cn/wiki/RadMwQJ3aiO2S5kRZHocA3Genhd)  
+(6) [P-Tuning v2实现过程](https://z0yrmerhgi8.feishu.cn/wiki/PqMXw5Zxpit6uEkr5eEcDycWnsc)  
+(7) [P-Tuning v2使用的数据集](https://z0yrmerhgi8.feishu.cn/wiki/A8NvwyXKki0Wgok8lnbcI883nLb)  
+(8) [ChatGLM3-6B工具调用](https://z0yrmerhgi8.feishu.cn/wiki/SwKpwW9rLilSzfkMPRhc0zt1nMd)  
+___
 #### 《LLM从理论到实践》  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  
 (2) [2-绪论](https://mp.weixin.qq.com/s/GG6DCVcojVifCbV9XWNCOA)  
-<br>
-
+___
 #### 《公众号文章》  
 [使用vLLM和ChatGLM3-6b批量推理](https://z0yrmerhgi8.feishu.cn/wiki/UF2LwNt1xiwpwBkGHwKcmWiyn5e?from=from_copylink)  
+[基于Llama2模型的开源模型](https://mp.weixin.qq.com/s/w-WpN8sKLMU6rXkuMdUiHg)  
+<br><br>
 
 
 ### 知识工程-自然语言处理
@@ -104,7 +152,14 @@
 (12) [手动实现Transformer](https://mp.weixin.qq.com/s/DDIGgDro6JqNdCUkvtWwQw)  
 (13) [手动实现BERT](https://mp.weixin.qq.com/s/T4jgfJsuY3GZqDXXRDHyYg)  
 (14) [利用Hugging Face中的模型进行句子相似性实践](https://mp.weixin.qq.com/s/NBwBC_Z3Xa_pmN1zD_OIxA)  
-<br>
+___
+#### 《公众号文章》  
+[Word2Vec模型总结](https://mp.weixin.qq.com/s/VSQZhLqGCIE1IGmfTLblHg)  
+[TextCNN和TextRNN：原理与实践](https://mp.weixin.qq.com/s/z03xOID71d6oP50fhnK-ig)  
+[残差神经网络：原理与实践](https://mp.weixin.qq.com/s/QEk1bD3T6dIOe8tGsPiIgg)  
+<br><br>
+
+
 
 
 ### 公众号：NLP工程化

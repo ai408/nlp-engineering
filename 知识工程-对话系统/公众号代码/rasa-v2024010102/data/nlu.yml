@@ -1,0 +1,23 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: out_of_scope
+  examples: |
+    - 为什么大模型应用技术
+    - 大模型应用技术的原理是什么

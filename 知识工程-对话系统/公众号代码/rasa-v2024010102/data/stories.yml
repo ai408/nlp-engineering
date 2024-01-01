@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Handle out_of_scope with action_gpt_fallback
+  steps:
+  - intent: out_of_scope
+  - action: action_gpt_fallback

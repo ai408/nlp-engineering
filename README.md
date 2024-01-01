@@ -91,6 +91,8 @@ ___
 ### 知识工程-对话系统  
 #### 《Rasa3实战》  
 (1) [聊天机器人框架Rasa资源整理](https://z0yrmerhgi8.feishu.cn/wiki/D5Lew7M5riSHknkAfeJcuwmenmC)  
+(2) [Rasa初始化聊天机器人的配置](https://z0yrmerhgi8.feishu.cn/wiki/QYkVw73sKi1HJEkh6LmcTBuPnRb)  
+(3) [打通Rasa Action Server和LLM接口的尝试方法](https://z0yrmerhgi8.feishu.cn/wiki/UQa0wQBeJi6K7oknz2wcaSTnnNb)  
 ___
 #### 《Rasa3源码剖析》  
 (1) [报时机器人的rasa shell执行流程分析](https://z0yrmerhgi8.feishu.cn/wiki/CvASwk5SmiYkCXkqONycSxVfnJg)  
@@ -130,6 +132,7 @@ ___
 (6) [P-Tuning v2实现过程](https://z0yrmerhgi8.feishu.cn/wiki/PqMXw5Zxpit6uEkr5eEcDycWnsc)  
 (7) [P-Tuning v2使用的数据集](https://z0yrmerhgi8.feishu.cn/wiki/A8NvwyXKki0Wgok8lnbcI883nLb)  
 (8) [ChatGLM3-6B工具调用](https://z0yrmerhgi8.feishu.cn/wiki/SwKpwW9rLilSzfkMPRhc0zt1nMd)  
+(9) [梳理Langchain-Chatchat-UI接口文档](https://z0yrmerhgi8.feishu.cn/wiki/IWBLw7jYKicm9ekC7TUc5aLRnYf)  
 ___
 #### 《LLM从理论到实践》  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  

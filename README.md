@@ -8,6 +8,7 @@ ___
 (1) [Python 3.9.13安装过程](https://z0yrmerhgi8.feishu.cn/wiki/GSiMwYhCAi8tPwkaKHyc5gS6nGh)  
 (2) [种依赖管理工具实现requirements.txt文件生成](https://z0yrmerhgi8.feishu.cn/wiki/DsJQw9nJbiYO5RkHnbyc9mHVnY3)  
 (3) [python -m http.server在本地启动简单HTTP服务器的命令](https://z0yrmerhgi8.feishu.cn/wiki/FRUewak4liaRVpkjq6JcnYZbnie)  
+(4) [Python中的协程、线程和进程](https://z0yrmerhgi8.feishu.cn/wiki/UXONwlZHMisGSpkjEAnco9RenKg)  
 <br><br>
 
 
@@ -93,6 +94,7 @@ ___
 (1) [聊天机器人框架Rasa资源整理](https://z0yrmerhgi8.feishu.cn/wiki/D5Lew7M5riSHknkAfeJcuwmenmC)  
 (2) [Rasa初始化聊天机器人的配置](https://z0yrmerhgi8.feishu.cn/wiki/QYkVw73sKi1HJEkh6LmcTBuPnRb)  
 (3) [打通Rasa Action Server和LLM接口的尝试方法](https://z0yrmerhgi8.feishu.cn/wiki/UQa0wQBeJi6K7oknz2wcaSTnnNb)  
+(4) [Rasa中的tracker_store和event_broker](https://z0yrmerhgi8.feishu.cn/wiki/DV5pwvbu0iViB2kLVlacHCj5nbc)  
 ___
 #### 《Rasa3源码剖析》  
 (1) [报时机器人的rasa shell执行流程分析](https://z0yrmerhgi8.feishu.cn/wiki/CvASwk5SmiYkCXkqONycSxVfnJg)  

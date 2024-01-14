@@ -76,9 +76,14 @@ ___
 ### 统计学习-深度学习
 #### 《PyTorch实战》  
 (1) [PyTorch中的nn.LeakyReLU()、nn.Module和nn.ModuleList](https://z0yrmerhgi8.feishu.cn/wiki/H9s7wRvJIi1cBrk995lczYgXnBf)  
+(2) [PyTorch中的Eager模式](https://z0yrmerhgi8.feishu.cn/wiki/EIszwHdrfiYmNbkd1uJcg29qn2e)    
+(3) [TorchDynamo原理和示例](https://z0yrmerhgi8.feishu.cn/wiki/VfuIwmaRjijcnPky3O1cdBRMn6g)   
+(4) [PyTorch中的FX图](https://z0yrmerhgi8.feishu.cn/wiki/UyIlwGVNCiI5HzkkNqFcA0Shn5g)   
+(5) [PyTorch中的AOTAutograd、PrimTorch和TorchInductor](https://z0yrmerhgi8.feishu.cn/wiki/XJLewlitfiWTG1kwimpcnDf3nLx)   
+(6) [FX图中的节点代表什么操作](https://z0yrmerhgi8.feishu.cn/wiki/P6fUwX3QZiWJQmkvD3Qc50iinPz)   
+(7) [PyTorch中的CUDA操作](https://mp.weixin.qq.com/s/73GwrPD_CAE4C3z5I4VxKw)  
 ___
-#### 《公众号文章》  
-[PyTorch中的CUDA操作](https://mp.weixin.qq.com/s/73GwrPD_CAE4C3z5I4VxKw)  
+#### 《公众号文章》   
 [多层前馈神经网络及BP算法](https://mp.weixin.qq.com/s/-lw-1OketbohE5e41-_Duw)  
 [使用TorchLens可视化一个简单的神经网络](https://mp.weixin.qq.com/s/CZY06yLByRbsKP8p6t32kQ)  
 <br><br>

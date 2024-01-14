@@ -13,6 +13,13 @@ ___
 (6) [Python函数加async，但没有加await可以异步吗](https://z0yrmerhgi8.feishu.cn/wiki/J8iIwxeNgiyBDbk6i87cc5Q3nBf)  
 (7) [Python中的cls语法](https://z0yrmerhgi8.feishu.cn/wiki/VfUNwiy1niIsFCk2yVaccq3anOe)  
 (8) [Python中的装饰器](https://z0yrmerhgi8.feishu.cn/wiki/PQE5wQcIhilPixkYTMLc7YH3nXe)  
+(9) [BM25（Best Matching 25）算法基本思想](https://z0yrmerhgi8.feishu.cn/wiki/IG6WwISMMirpwnkznv5cPVDXnyc)  
+(10) [Python中的@property](https://z0yrmerhgi8.feishu.cn/wiki/SGX0wmMbVif7LbkEikwcgOnXnhh)  
+(11) [Centos创建一个Python虚拟环境](https://z0yrmerhgi8.feishu.cn/wiki/TIA6wnSHniXvrskbqu7c0ksLn7c)  
+(12) [Python中的__call__()方法](https://z0yrmerhgi8.feishu.cn/wiki/EWOMw9uh5iQ7FtkpDDacc0Wdnyd)  
+(13) [Python中的__add__()方法](https://z0yrmerhgi8.feishu.cn/wiki/RKv3w1YsdiVd8Lkcaz4cuMbBnSc)  
+(14) [Python中的__repr__()方法](https://z0yrmerhgi8.feishu.cn/wiki/J2LxwMjS4iTzg2kbqJvcRcEGnKc)  
+(15) [Python中的魔法方法](https://z0yrmerhgi8.feishu.cn/wiki/RqU8wNcv1i2r7ZkQkk8c6n8FnVe)  
 ___
 #### 《公众号文章》  
 <br><br>
@@ -67,7 +74,8 @@ ___
 
 
 ### 统计学习-深度学习
-#### TODO
+#### 《PyTorch实战》  
+(1) [PyTorch中的nn.LeakyReLU()、nn.Module和nn.ModuleList](https://z0yrmerhgi8.feishu.cn/wiki/H9s7wRvJIi1cBrk995lczYgXnBf)  
 ___
 #### 《公众号文章》  
 [PyTorch中的CUDA操作](https://mp.weixin.qq.com/s/73GwrPD_CAE4C3z5I4VxKw)  
@@ -141,6 +149,15 @@ ___
 (7) [P-Tuning v2使用的数据集](https://z0yrmerhgi8.feishu.cn/wiki/A8NvwyXKki0Wgok8lnbcI883nLb)  
 (8) [ChatGLM3-6B工具调用](https://z0yrmerhgi8.feishu.cn/wiki/SwKpwW9rLilSzfkMPRhc0zt1nMd)  
 (9) [梳理Langchain-Chatchat-UI接口文档](https://z0yrmerhgi8.feishu.cn/wiki/IWBLw7jYKicm9ekC7TUc5aLRnYf)  
+___
+#### 《Transformers实战》  
+(1) [LLM模型的generate和chat函数区别](https://z0yrmerhgi8.feishu.cn/wiki/VS3BwJXf2i6By7kEgUdcvvCLnIf)  
+___
+#### 《LangChain实战》  
+___
+#### 《LlamaIndex实战》  
+(1) [LlamaIndex中的CustomLLM（本地加载模型）](https://z0yrmerhgi8.feishu.cn/wiki/TQENwJOPeinKDXkhZ4eci9TknWc)  
+(2) [LlamaIndex中的CustomLLM（在线加载模型）](https://z0yrmerhgi8.feishu.cn/wiki/OeyQwSE2QiKqhRkwvuFcYD4vnfc)  
 ___
 #### 《LLM从理论到实践》  
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  

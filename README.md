@@ -6,7 +6,7 @@ ___
 ___
 #### 《Python编程》  
 (1) [Python 3.9.13安装过程](https://z0yrmerhgi8.feishu.cn/wiki/GSiMwYhCAi8tPwkaKHyc5gS6nGh)  
-(2) [种依赖管理工具实现requirements.txt文件生成](https://z0yrmerhgi8.feishu.cn/wiki/DsJQw9nJbiYO5RkHnbyc9mHVnY3)  
+(2) [3种依赖管理工具实现requirements.txt文件生成](https://z0yrmerhgi8.feishu.cn/wiki/DsJQw9nJbiYO5RkHnbyc9mHVnY3)  
 (3) [python -m http.server在本地启动简单HTTP服务器的命令](https://z0yrmerhgi8.feishu.cn/wiki/FRUewak4liaRVpkjq6JcnYZbnie)  
 (4) [Python中的协程、线程和进程](https://z0yrmerhgi8.feishu.cn/wiki/UXONwlZHMisGSpkjEAnco9RenKg)  
 (5) [Python中的@abstractmethod](https://z0yrmerhgi8.feishu.cn/wiki/Xh6nwLDmHi66FtkWCejcX4QBnLh)  

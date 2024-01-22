@@ -153,6 +153,8 @@ ___
 (7) [P-Tuning v2使用的数据集](https://z0yrmerhgi8.feishu.cn/wiki/A8NvwyXKki0Wgok8lnbcI883nLb)  
 (8) [ChatGLM3-6B工具调用](https://z0yrmerhgi8.feishu.cn/wiki/SwKpwW9rLilSzfkMPRhc0zt1nMd)  
 (9) [梳理Langchain-Chatchat-UI接口文档](https://z0yrmerhgi8.feishu.cn/wiki/IWBLw7jYKicm9ekC7TUc5aLRnYf)  
+(10) [langchain中的Document类](https://z0yrmerhgi8.feishu.cn/wiki/L7oXwSpUqitLJlkDBLwc0dZOnqg)  
+(11) [梳理Langchain-Chatchat知识库API接口](https://z0yrmerhgi8.feishu.cn/wiki/XN7AwrH6DiCpMIkaNnAcPd7znZc)  
 ___
 #### 《Transformers实战》  
 (1) [LLM模型的generate和chat函数区别](https://z0yrmerhgi8.feishu.cn/wiki/VS3BwJXf2i6By7kEgUdcvvCLnIf)  

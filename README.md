@@ -204,6 +204,6 @@ ___
 
 ### 公众号：NLP工程化
 专注于Python/C++/CUDA、ML/DL/RL和NLP/KG/DS/LLM领域的技术分享  
-![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化_工程号.jpg)  
+![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化_公众号.jpg)  
 ### 星球号：NLP工程化 
 ![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化_星球号.jpg)  

@@ -155,6 +155,7 @@ ___
 (9) [梳理Langchain-Chatchat-UI接口文档](https://z0yrmerhgi8.feishu.cn/wiki/IWBLw7jYKicm9ekC7TUc5aLRnYf)  
 (10) [langchain中的Document类](https://z0yrmerhgi8.feishu.cn/wiki/L7oXwSpUqitLJlkDBLwc0dZOnqg)  
 (11) [梳理Langchain-Chatchat知识库API接口](https://z0yrmerhgi8.feishu.cn/wiki/XN7AwrH6DiCpMIkaNnAcPd7znZc)  
+(12) [替换Langchain-Chatchat中的数据库为MySQL](https://z0yrmerhgi8.feishu.cn/wiki/Qdj4wSj9Yiq7yWkeZAecz86UnUd)  
 ___
 #### 《Transformers实战》  
 (1) [LLM模型的generate和chat函数区别](https://z0yrmerhgi8.feishu.cn/wiki/VS3BwJXf2i6By7kEgUdcvvCLnIf)  
@@ -203,4 +204,6 @@ ___
 
 ### 公众号：NLP工程化
 专注于Python/C++/CUDA、ML/DL/RL和NLP/KG/DS/LLM领域的技术分享  
-![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化.jpg)
+![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化_工程号.jpg)  
+### 星球号：NLP工程化 
+![](https://github.com/ai408/nlp-engineering/blob/main/NLP工程化/NLP工程化_星球号.jpg)  

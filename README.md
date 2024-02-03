@@ -118,7 +118,7 @@ ___
 (16) [NebulaGraph中nGQL命令汇总：查询调优](https://z0yrmerhgi8.feishu.cn/wiki/BKFNw6mAziZOJukJwiLcMFWNnwe)  
 (17) [NebulaGraph中nGQL命令汇总：运维](https://z0yrmerhgi8.feishu.cn/wiki/ThijwHqxyiIhrfkPobecgYwPnIe)  
 (18) [NebulaGraph中nGQL常用的CRUD命令](https://z0yrmerhgi8.feishu.cn/wiki/ZgvRwlvn7iYd4hkMzFFcG0nOnwh)  
-(19) [Nebula Siwi：基于图数据库的智能问答助手思路分析](https://z0yrmerhgi8.feishu.cn/wiki/LgiKwdqjTiqgOzk3DflcPps4n9e)  
+(19) [Nebula Siwi：基于图数据库的智能问答助手思路分析](https://z0yrmerhgi8.feishu.cn/wiki/LgiKwdqjTiqgOzk3DflcPps4n9e)（[B站](https://www.bilibili.com/video/BV1A6421V7cH/)）（[YouTube](https://www.youtube.com/watch?v=CNEVcdn68tI&ab_channel=NLP%E6%97%A5%E5%BF%97%E5%BD%95)）  
 ___
 #### 《公众号文章》  
 <br><br>

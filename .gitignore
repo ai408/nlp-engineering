@@ -163,12 +163,5 @@ cython_debug/
 *.arrow
 *.json
 
-# 数据集缓存和模型输出
-dataset_cache/
-output_model/
-output_model_lora/
-merge_llama_with_lora_output/
-Llama2-Chinese/tools/checkpoint-500/
-Llama2-Chinese/tools/merge_llama_with_lora_hf_output/
-Llama2-Chinese/tools/merge_llama_with_lora_pt_output/
-Llama2-Chinese/tools/llama2_quantize_AutoGPTQ/
+# 相关文件
+/知识工程-大语言模型/LangChain实战/1-LangChain文档/1-LangChain入门/api_secret_key.py

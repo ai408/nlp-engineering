@@ -164,4 +164,4 @@ cython_debug/
 *.json
 
 # 相关文件
-/知识工程-大语言模型/LangChain实战/1-LangChain文档/1-LangChain入门/api_secret_key.py
+/api_secret_key.py

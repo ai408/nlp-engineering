@@ -16,7 +16,7 @@ from langchain.pydantic_v1 import BaseModel, Field
 from langchain_core.messages import BaseMessage
 from langserve import add_routes
 
-
+from qianfan_functions_agent import create_qianfan_functions_agent
 from api_secret_key import API_Key, API_SECRET, TAVILY_API_KEY
 import os
 os.environ["QIANFAN_AK"] = API_Key
@@ -62,7 +62,8 @@ def langserve(llm: QianfanChatEndpoint) -> AgentExecutor:
 
     # 3.创建智能体
     prompt = hub.pull("hwchase17/openai-functions-agent")
-    agent = create_openai_functions_agent(llm, tools, prompt)
+    # agent = create_openai_functions_agent(llm, tools, prompt)
+    agent = create_qianfan_functions_agent(llm, tools, prompt)
     agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
     return agent_executor

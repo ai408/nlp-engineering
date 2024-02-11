@@ -25,7 +25,7 @@ def retrieval_chain_qianfang(llm: QianfanChatEndpoint) -> str:
     loader = WebBaseLoader("https://docs.smith.langchain.com/overview")  # 从网页加载文档
     docs = loader.load()  # 加载文档
 
-    # 安装并使用BaichuanTextEmbeddings嵌入模型
+    # 安装并使用QianfanEmbeddingsEndpoint嵌入模型
     from langchain_community.embeddings import QianfanEmbeddingsEndpoint
     embeddings = QianfanEmbeddingsEndpoint()
 

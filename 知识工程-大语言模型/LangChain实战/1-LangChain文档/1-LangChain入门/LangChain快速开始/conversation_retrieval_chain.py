@@ -32,7 +32,7 @@ def conversation_retrieval_chain_qianfan(llm: QianfanChatEndpoint) -> str:
     docs = loader.load()  # 加载文档
     embeddings = QianfanEmbeddingsEndpoint()
     text_splitter = RecursiveCharacterTextSplitter(  # 使用递归字符拆分器
-        chunk_size=1000,        # 拆分大小
+        chunk_size=500,        # 拆分大小
         chunk_overlap=20,      # 重叠大小
         length_function=len,   # 长度函数（默认）
         add_start_index=False, # 添加开始索引（默认）

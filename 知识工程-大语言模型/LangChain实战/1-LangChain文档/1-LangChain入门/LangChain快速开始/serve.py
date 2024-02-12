@@ -45,7 +45,7 @@ def langserve(llm: QianfanChatEndpoint) -> AgentExecutor:
         add_start_index=False,  # 添加开始索引（默认）
     )
     documents = text_splitter.split_documents(docs)
-    embeddings = QianfanEmbeddingsEndpoint()
+    embeddings = QianfanEmbeddingsEndpoint(chunk_size=1000)
     vector = FAISS.from_documents(documents, embeddings)
     retriever = vector.as_retriever()
 

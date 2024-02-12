@@ -27,7 +27,7 @@ def retrieval_chain_qianfang(llm: QianfanChatEndpoint) -> str:
 
     # 安装并使用QianfanEmbeddingsEndpoint嵌入模型
     from langchain_community.embeddings import QianfanEmbeddingsEndpoint
-    embeddings = QianfanEmbeddingsEndpoint()
+    embeddings = QianfanEmbeddingsEndpoint(chunk_size=1000)
 
     # 安装FAISS库并创建本地向量存储，然后将文档拆分并索引到向量存储中
     # pip install faiss-cpu

@@ -30,9 +30,9 @@ def conversation_retrieval_chain_qianfan(llm: QianfanChatEndpoint) -> str:
     # 方式1：create_history_aware_retriever：创建一个链，它接受对话历史并返回文档
     loader = WebBaseLoader("https://docs.smith.langchain.com/overview")  # 从网页加载文档
     docs = loader.load()  # 加载文档
-    embeddings = QianfanEmbeddingsEndpoint()
+    embeddings = QianfanEmbeddingsEndpoint(chunk_size=1000)
     text_splitter = RecursiveCharacterTextSplitter(  # 使用递归字符拆分器
-        chunk_size=500,        # 拆分大小
+        chunk_size=1000,       # 拆分大小
         chunk_overlap=20,      # 重叠大小
         length_function=len,   # 长度函数（默认）
         add_start_index=False, # 添加开始索引（默认）

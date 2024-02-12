@@ -33,7 +33,7 @@ def chat_with_qianfan() -> QianfanChatEndpoint:
 def agent_tool(llm: QianfanChatEndpoint):
     loader = WebBaseLoader("https://docs.smith.langchain.com/overview")  # 从网页加载文档
     docs = loader.load()  # 加载文档
-    embeddings = QianfanEmbeddingsEndpoint()
+    embeddings = QianfanEmbeddingsEndpoint(chunk_size=1000)
     text_splitter = RecursiveCharacterTextSplitter(  # 使用递归字符拆分器
         chunk_size=1000,        # 拆分大小
         chunk_overlap=20,      # 重叠大小

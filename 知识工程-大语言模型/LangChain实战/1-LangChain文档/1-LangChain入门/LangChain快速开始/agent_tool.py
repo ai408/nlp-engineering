@@ -4,17 +4,19 @@ LangChain快速开始：https://z0yrmerhgi8.feishu.cn/wiki/UwKIwGYcliytiekTKzPco
 """
 
 from langchain.tools.retriever import create_retriever_tool
-from langchain_community.chat_models import QianfanChatEndpoint
+from langchain_community.chat_models import QianfanChatEndpoint, ChatOpenAI
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.embeddings import QianfanEmbeddingsEndpoint
 from langchain_community.vectorstores import FAISS
 from langchain_community.tools.tavily_search import TavilySearchResults
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain import hub
-from langchain.agents import AgentExecutor
+from langchain.agents import AgentExecutor, create_openai_functions_agent
+from langchain_openai import ChatOpenAI
 
-from api_secret_key import API_Key, API_SECRET, TAVILY_API_KEY
+from api_secret_key import API_Key, API_SECRET, TAVILY_API_KEY, OPENAI_API_KEY, OPENAI_API_PROXY
 import os
 os.environ["QIANFAN_AK"] = API_Key
 os.environ["QIANFAN_SK"] = API_SECRET
@@ -29,8 +31,15 @@ def chat_with_qianfan() -> QianfanChatEndpoint:
     )
     return chat
 
+def chat_with_openai():
+    """
+    使用OpenAI的API进行对话
+    """
+    chat = ChatOpenAI(openai_api_key=OPENAI_API_KEY, openai_proxy=OPENAI_API_PROXY)
+    return chat
 
-def agent_tool(llm: QianfanChatEndpoint):
+
+def agent_tool(llm: QianfanChatEndpoint|ChatOpenAI):
     loader = WebBaseLoader("https://docs.smith.langchain.com/overview")  # 从网页加载文档
     docs = loader.load()  # 加载文档
     embeddings = QianfanEmbeddingsEndpoint(chunk_size=1000)
@@ -58,7 +67,8 @@ def agent_tool(llm: QianfanChatEndpoint):
     prompt = hub.pull("hwchase17/openai-functions-agent")
     print(prompt)
     from qianfan_functions_agent import create_qianfan_functions_agent
-    agent = create_qianfan_functions_agent(llm, tools, prompt)  # 创建代理
+    # agent = create_qianfan_functions_agent(llm, tools, prompt)  # qianfan创建代理
+    agent = create_openai_functions_agent(llm, tools, prompt)  # openai创建代理
     agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)  # 创建代理执行器
 
     # 问题1：调用代理并询问"langsmith如何帮助测试？"然后打印出答案
@@ -79,5 +89,6 @@ def agent_tool(llm: QianfanChatEndpoint):
 
 
 if __name__ == "__main__":
-    llm = chat_with_qianfan()
+    # llm = chat_with_qianfan()
+    llm = chat_with_openai()
     agent_tool(llm)

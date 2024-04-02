@@ -1,18 +1,22 @@
-from typing import List
+import os
 import openai
+from typing import List
 from langchain_openai import ChatOpenAI
-from api_secret_key import OPENAI_API_KEY, OPENAI_API_PROXY
+from api_secret_key import API_Key, API_SECRET, OPENAI_API_KEY, OPENAI_API_PROXY, BASE_URL
+
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+os.environ["OPENAI_API_BASE"] = BASE_URL
 
 
 def chat_with_openai() -> ChatOpenAI:
     """
     使用OpenAI的API进行对话
     """
-    chat = ChatOpenAI(openai_api_key=OPENAI_API_KEY, openai_proxy=OPENAI_API_PROXY, model="gpt-3.5-turbo")
+    chat = ChatOpenAI(model="gpt-3.5-turbo")
     return chat
 
 def call_chat_model(messages: List[dict]) -> str:
-    client = openai.OpenAI(api_key=OPENAI_API_KEY)  # 创建客户端
+    client = openai.OpenAI(api_key=OPENAI_API_KEY, base_url=BASE_URL)  # 创建客户端
     response = client.chat.completions.create(  # 调用模型
         model="gpt-3.5-turbo",
         messages=messages,

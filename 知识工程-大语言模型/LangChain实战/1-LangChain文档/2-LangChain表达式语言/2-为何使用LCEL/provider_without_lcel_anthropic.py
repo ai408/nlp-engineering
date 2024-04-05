@@ -1,13 +1,8 @@
-from langchain_community.chat_models import ChatAnthropic
 import anthropic
 
 
-def chat_with_anthropic() -> ChatAnthropic:
-    chat = ChatAnthropic(model="claude-2", anthropic_api_key="my-api-key")  # 定义anthropic
-    return chat
-
 def call_anthropic(prompt_value: str) -> str:
-    anthropic_client = anthropic.Anthropic(api_key="my-api-key")  # 创建客户端
+    anthropic_client = anthropic.Anthropic(api_key="")  # 创建客户端
     response = anthropic_client.completions.create(
         model="claude-2",
         prompt=prompt_value,
@@ -26,5 +21,5 @@ def privider_lcel():
 
 
 if __name__ == "__main__":
-    chat = chat_with_anthropic()
-    privider_lcel()
+    response = privider_lcel()
+    print(response)

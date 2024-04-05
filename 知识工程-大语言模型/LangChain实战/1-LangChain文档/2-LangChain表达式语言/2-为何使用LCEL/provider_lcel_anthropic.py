@@ -5,7 +5,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 
 def chat_with_anthropic() -> ChatAnthropic:
-    chat = ChatAnthropic(model="claude-2", anthropic_api_key="my-api-key")  # 定义anthropic
+    chat = ChatAnthropic(model="claude-2", anthropic_api_key="")  # 定义anthropic
     return chat
 
 def privider_lcel(anthropic: ChatAnthropic) -> str:
@@ -28,4 +28,5 @@ def privider_lcel(anthropic: ChatAnthropic) -> str:
 
 if __name__ == "__main__":
     chat = chat_with_anthropic()
-    privider_lcel(chat)
+    chain_response = privider_lcel(chat)
+    print(chain_response)

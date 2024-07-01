@@ -20,6 +20,13 @@ ___
 (13) [Python中的__add__()方法](https://z0yrmerhgi8.feishu.cn/wiki/RKv3w1YsdiVd8Lkcaz4cuMbBnSc)  
 (14) [Python中的__repr__()方法](https://z0yrmerhgi8.feishu.cn/wiki/J2LxwMjS4iTzg2kbqJvcRcEGnKc)  
 (15) [Python中的魔法方法](https://z0yrmerhgi8.feishu.cn/wiki/RqU8wNcv1i2r7ZkQkk8c6n8FnVe)  
+(16) [Pydantic库介绍](https://z0yrmerhgi8.feishu.cn/wiki/CSAfwSMj7idsOskLD06cqEiJnqf)  
+(17) [Python中的async和await用法](https://z0yrmerhgi8.feishu.cn/wiki/QzYrwW4kMi5kwFksfFnc4vmnn0e)  
+(18) [concurrent.futures模块中ThreadPoolExecutor用法](https://z0yrmerhgi8.feishu.cn/wiki/K0lZwESijidc1jkBrurcbxCYnYg)  
+(19) [Python中vars用法](https://z0yrmerhgi8.feishu.cn/wiki/GSiTw0cYyikEswkGap5cGA3uneg)  
+(20) [Python操作SQLite指南](https://z0yrmerhgi8.feishu.cn/wiki/EkV7wmW58ilCKAkqEIYct3gGnZg)  
+(21) [生产环境使用Flask+Tornado+Nginx组合来部署Flask应用程序](https://z0yrmerhgi8.feishu.cn/wiki/DYmFwVxqLiBe6tkyK0LcmtO4nYb)  
+(22) [SQLAlchemy（alembic）和Flask-SQLAlchemy（Flask-Migrate）入门教程](https://z0yrmerhgi8.feishu.cn/wiki/IbMsw5xbLintiGkCc2bcFDStnMc)  
 ___
 #### 《公众号文章》  
 <br><br>

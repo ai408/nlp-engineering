@@ -27,6 +27,7 @@ ___
 (20) [Python操作SQLite指南](https://z0yrmerhgi8.feishu.cn/wiki/EkV7wmW58ilCKAkqEIYct3gGnZg)  
 (21) [生产环境使用Flask+Tornado+Nginx组合来部署Flask应用程序](https://z0yrmerhgi8.feishu.cn/wiki/DYmFwVxqLiBe6tkyK0LcmtO4nYb)  
 (22) [SQLAlchemy（alembic）和Flask-SQLAlchemy（Flask-Migrate）入门教程](https://z0yrmerhgi8.feishu.cn/wiki/IbMsw5xbLintiGkCc2bcFDStnMc)  
+(23) [Celery入门教程](https://z0yrmerhgi8.feishu.cn/wiki/TgBmwIdtciS7huks3M6c0w2vnnb)  
 ___
 #### 《公众号文章》  
 <br><br>

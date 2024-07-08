@@ -36,9 +36,9 @@ ___
 
 ### 编程语言-C++编程
 #### 《Boost程序库完全开发指南》    
-(1) [1-开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
-(2) [1.1-C++基础知识点梳理](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
-(3) [1.2-C++基础知识点梳理](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)  
+(1) [开发环境和构建工具](https://mp.weixin.qq.com/s/treuWsrVxDSNC9MxbNC9Mw)  
+(2) [C++基础知识点梳理1](https://mp.weixin.qq.com/s/M84mWD1Fpv9dc8QiwOB_Rg)  
+(3) [C++基础知识点梳理2](https://mp.weixin.qq.com/s/-nuNTjMr-3NjjL9VMpUYMg)  
 ___
 #### 《公众号文章》  
 <br><br>
@@ -46,10 +46,12 @@ ___
 
 ### 编程语言-CUDA编程
 #### 《CUDA C权威编程指南》   
-(1) [1-基于CUDA的异构并行计算](https://mp.weixin.qq.com/s/NUny15cOu1A0wi7MFM72xw)  
-(2) [1.1-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/JA04qbWnsqDhRlDtPba_Hw)  
-(3) [1.2-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/coxZC1Mhww0vuGX9B1TQZQ)  
-(4) [1.3-CUDA基础知识点梳理](https://mp.weixin.qq.com/s/vZYdCwaQoQT3b_emSAlDzw)  
+(1) [基于CUDA的异构并行计算](https://mp.weixin.qq.com/s/NUny15cOu1A0wi7MFM72xw)  
+(2) [CUDA基础知识点梳理1](https://mp.weixin.qq.com/s/JA04qbWnsqDhRlDtPba_Hw)  
+(3) [CUDA基础知识点梳理2](https://mp.weixin.qq.com/s/coxZC1Mhww0vuGX9B1TQZQ)  
+(4) [CUDA基础知识点梳理3](https://mp.weixin.qq.com/s/vZYdCwaQoQT3b_emSAlDzw)  
+(5) [CUDA编程模型](https://z0yrmerhgi8.feishu.cn/wiki/A3SswaHMOiFcoMklwppcsZ3Xn2b)  
+(6) [给核函数计时](https://z0yrmerhgi8.feishu.cn/wiki/KFhQwIkbAi44Sukp8PVc87NxnAd)  
 ___
 #### 《DeepSpeed框架》  
 (1) [大纲和资料梳理](https://z0yrmerhgi8.feishu.cn/wiki/HGR2wLfXeiCKo4k7SYrcRAIPnUd)  
@@ -186,6 +188,11 @@ ___
 (1) [LLM模型的generate和chat函数区别](https://z0yrmerhgi8.feishu.cn/wiki/VS3BwJXf2i6By7kEgUdcvvCLnIf)  
 ___
 #### 《LangChain实战》  
+(1) [LangChain介绍](https://z0yrmerhgi8.feishu.cn/wiki/HKX8wNTTbi94gHkRq9ocr09gnje)  
+(2) [使用langchain接入文心一言接口](https://z0yrmerhgi8.feishu.cn/wiki/IDrYwdIIki7we1k8Y8hcstgYnkg)  
+(3) [LangChain快速开始](https://z0yrmerhgi8.feishu.cn/wiki/UwKIwGYcliytiekTKzPco3jnndh)  
+(4) [LCEL入门](https://z0yrmerhgi8.feishu.cn/wiki/SJC0wtLNDiA7upkn89hccFlWnod)  
+(5) [LCEL优势](https://z0yrmerhgi8.feishu.cn/wiki/OjUEwSaBfigTltk5dV8ckFD5nvh)  
 ___
 #### 《LlamaIndex实战》  
 (1) [LlamaIndex中的CustomLLM（本地加载模型）](https://z0yrmerhgi8.feishu.cn/wiki/TQENwJOPeinKDXkhZ4eci9TknWc)  
@@ -195,9 +202,52 @@ ___
 (1) [1-本书介绍](https://mp.weixin.qq.com/s/QfS8c-fs-Gep6XxYYo0eMQ)  
 (2) [2-绪论](https://mp.weixin.qq.com/s/GG6DCVcojVifCbV9XWNCOA)  
 ___
+#### 《QAnything项目》
+(1) [通过容器启动QAnything知识库问答系统](https://z0yrmerhgi8.feishu.cn/wiki/JFFEwRb61iQ7upkxwPGcc2HEn9e)  
+(2) [QAnything接口文档](https://z0yrmerhgi8.feishu.cn/wiki/EdeLwyXXfijgkakYnTxc4MKXnUe)  
+(3) [解析QAnything启动命令过程](https://z0yrmerhgi8.feishu.cn/wiki/MtGqwIPFcioJv7k4eYDc8Y71nah)  
+___
+#### 《Dify项目》
+(1) [Dify入门指南](https://z0yrmerhgi8.feishu.cn/wiki/GbwlwOdhziUGzRkJTAjcBZiknqf)  
+(2) [Xorbits inference操作实战](https://z0yrmerhgi8.feishu.cn/wiki/AQxtwqNRFiHJJTkfOxtcQ8Lvnie)  
+(3) [Dify自定义工具例子](https://z0yrmerhgi8.feishu.cn/wiki/Fq4RwMPHtitzsgkDV19cZ7bsnKf)  
+(4) [dify-on-wechat中涉及企业微信几个函数解析](https://z0yrmerhgi8.feishu.cn/wiki/McsYwqfaVi4gQHk9LYjcmVzSndg)  
+(5) [dify-on-wechat中的entrypoint.sh脚本](https://z0yrmerhgi8.feishu.cn/wiki/YblHwDTGjiPmJ9kGVpvcJ5Hcnrd)  
+(6) [Dify v0.6.9将自定义工作流作为工具](https://z0yrmerhgi8.feishu.cn/wiki/L07AwFKorirwZpkGOencGGnWnvh)  
+(7) [Dify v0.6.9源码部署](https://z0yrmerhgi8.feishu.cn/wiki/RhZLwjuYxiK8ZikpUMVcICCwn1b)  
+(8) [Dify中的docker-compose.yaml分析-api](https://z0yrmerhgi8.feishu.cn/wiki/NYjPwXIaUiVtc4knC5Ccv0SsnHe)  
+(9) [Dify中的docker-compose.yaml分析-worker](https://z0yrmerhgi8.feishu.cn/wiki/H5fWwUsy6iI1xnkuU4icOmHenPb)  
+(10) [Dify中的docker-compose.yaml分析-web、db、redis、weaviate、sandbox和ssrf_proxy](https://z0yrmerhgi8.feishu.cn/wiki/PLLHwT9iDiLI5xkKKThczUbtnqe)  
+(11) [Dify中的Makefile分析](https://z0yrmerhgi8.feishu.cn/wiki/Otyuw8yLRiaCjlk0OotcLvJJnid)  
+(12) [Dify后端源码目录结构和蓝图](https://z0yrmerhgi8.feishu.cn/wiki/H7RHwuAvTiziq5kgxcWcrFm8nmf)  
+(13) [Dify中的API接口：对话、生成和工作流](https://z0yrmerhgi8.feishu.cn/wiki/Y6qvwPpv3iUp2KkUc5Qck18pnMe)  
+(14) [dify/api/models/account.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/SBDXw9IDAiuMnoklo4ZcynJqn3b)  
+(15) [dify/api/models/api_based_extension.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/TbV8w9ff5iKDmjkGgF2cx0rLnJc)  
+(16) [dify/api/models/dataset.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/QNIWwA4ODiQxemklpFtcviBvnOc)  
+(17) [dify/api/models/model.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/QiMYwy7SciXAXokCEurcOmvhnwg)  
+(18) [dify/api/models/provider.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/DKASwEjSIin72LkZr0WcZAMGnXd)  
+(19) [dify/api/models/source.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/WVKSw7XEnif9n0k8tyMc839Ontf)  
+(20) [dify/api/models/task.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/Asn9wAowZij6zXkqeJOczLy6neb)  
+(21) [dify/api/models/tool.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/KkXhw5Y2zifU9ekJYGFcWekHn7b)  
+(22) [dify/api/models/tools.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/E8oowetyIiFmUQklzyccjc1snhe)  
+(23) [dify/api/models/web.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/O4qFwwWfnipjcgkHwLocYIvHnAb)  
+(24) [dify/api/models/workflow.py文件中的数据表](https://z0yrmerhgi8.feishu.cn/wiki/IoRXw80odiyZluku8ahc7gPKnng)  
+(25) [dify-web的Dockerfile分析](https://z0yrmerhgi8.feishu.cn/wiki/Q29ZwAhFUivDWykh5M4c5tHYn2c)  
+(26) [dify-api的Dockerfile分析](https://z0yrmerhgi8.feishu.cn/wiki/SRpMwQamWi4anrkRLhCc1od3nIg)  
+(27) [Dify中的工具](https://z0yrmerhgi8.feishu.cn/wiki/L0WWwUllrirwNvksBMjcOCmanuh)  
+(28) [Dify工作流中的变量聚合节点](https://z0yrmerhgi8.feishu.cn/wiki/RSr9w1GkzicrRmkG5PUccLTXn1g)  
+(29) [Dify工作流中的变量聚合节点](https://z0yrmerhgi8.feishu.cn/wiki/HPrOwrHr5inNzJkgEswcQaTPn3b)  
+(30) [Dify工作流中的迭代节点](https://z0yrmerhgi8.feishu.cn/wiki/CUXdw0FVFiqLyIkGYolcM3sgnlc)  
+(31) [Dify中的RAG和知识库](https://z0yrmerhgi8.feishu.cn/wiki/PiHWwkd3FioX5pkMvuvc5M6Wn6f)  
+(32) [Dify中的知识库API列表](https://z0yrmerhgi8.feishu.cn/wiki/VzQjwhpEjiQH2okq1f3cTBMcn0x)  
+(33) [Dify中的weaviate向量数据库操作](https://z0yrmerhgi8.feishu.cn/wiki/JYsNwWXZpiZzJYkem57cOiFPnhQ)  
+___
+#### 《Xinference项目》
+___
 #### 《公众号文章》  
 [使用vLLM和ChatGLM3-6b批量推理](https://z0yrmerhgi8.feishu.cn/wiki/UF2LwNt1xiwpwBkGHwKcmWiyn5e?from=from_copylink)  
 [基于Llama2模型的开源模型](https://mp.weixin.qq.com/s/w-WpN8sKLMU6rXkuMdUiHg)  
+[phixtral-2x2_8：由两个Microsoft/phi-2模型组成的MoE](https://z0yrmerhgi8.feishu.cn/wiki/LidbwdCAZidjrOktvIAcOzHLnEm)  
 <br><br>
 
 
@@ -230,6 +280,7 @@ ___
 [Word2Vec模型总结](https://mp.weixin.qq.com/s/VSQZhLqGCIE1IGmfTLblHg)  
 [TextCNN和TextRNN：原理与实践](https://mp.weixin.qq.com/s/z03xOID71d6oP50fhnK-ig)  
 [残差神经网络：原理与实践](https://mp.weixin.qq.com/s/QEk1bD3T6dIOe8tGsPiIgg)  
+[json-repair：修复LLM产生无效的JSON字符串](https://z0yrmerhgi8.feishu.cn/wiki/VbtXwe0aAiPTyXkA5s7cEBZcnib)  
 <br><br>
 
 

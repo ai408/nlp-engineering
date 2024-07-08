@@ -201,6 +201,14 @@ ___
 <br><br>
 
 
+### 知识工程-多模态模型
+#### 《ComfyUI项目》  
+(1) [ComfyUI入门教程](https://z0yrmerhgi8.feishu.cn/wiki/FATPw96GMiirxwkqYQWcOUBgnxZ)  
+___
+#### 《公众号文章》
+<br><br>
+
+
 ### 知识工程-自然语言处理
 #### 《HuggingFace自然语言处理详解》
 (1) [什么是HuggingFace](https://mp.weixin.qq.com/s/EscXWBLM09bgfgfUT66C9Q)  

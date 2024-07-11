@@ -236,11 +236,12 @@ ___
 (26) [dify-api的Dockerfile分析](https://z0yrmerhgi8.feishu.cn/wiki/SRpMwQamWi4anrkRLhCc1od3nIg)  
 (27) [Dify中的工具](https://z0yrmerhgi8.feishu.cn/wiki/L0WWwUllrirwNvksBMjcOCmanuh)  
 (28) [Dify工作流中的变量聚合节点](https://z0yrmerhgi8.feishu.cn/wiki/RSr9w1GkzicrRmkG5PUccLTXn1g)  
-(29) [Dify工作流中的变量聚合节点](https://z0yrmerhgi8.feishu.cn/wiki/HPrOwrHr5inNzJkgEswcQaTPn3b)  
+(29) [Dify工作流中的参数提取节点](https://z0yrmerhgi8.feishu.cn/wiki/HPrOwrHr5inNzJkgEswcQaTPn3b)  
 (30) [Dify工作流中的迭代节点](https://z0yrmerhgi8.feishu.cn/wiki/CUXdw0FVFiqLyIkGYolcM3sgnlc)  
 (31) [Dify中的RAG和知识库](https://z0yrmerhgi8.feishu.cn/wiki/PiHWwkd3FioX5pkMvuvc5M6Wn6f)  
 (32) [Dify中的知识库API列表](https://z0yrmerhgi8.feishu.cn/wiki/VzQjwhpEjiQH2okq1f3cTBMcn0x)  
 (33) [Dify中的weaviate向量数据库操作](https://z0yrmerhgi8.feishu.cn/wiki/JYsNwWXZpiZzJYkem57cOiFPnhQ)  
+(34) [在Windows平台上通过PyCharm调试Celery任务](https://mp.weixin.qq.com/s/ad6dwsDVHGtBeaIzgaJGRw)  
 ___
 #### 《Xinference项目》
 ___

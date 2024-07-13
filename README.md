@@ -31,6 +31,7 @@ ___
 (24) [Poetry入门教程](https://z0yrmerhgi8.feishu.cn/wiki/KapBwuGITiQ2I6ktYpicZl01nyh)  
 ___
 #### 《公众号文章》  
+(1) [Python中的名称修改和特殊属性](https://mp.weixin.qq.com/s/UJ_-TFfnl4l5_t62iWte-A)  
 <br><br>
 
 
@@ -242,6 +243,8 @@ ___
 (32) [Dify中的知识库API列表](https://z0yrmerhgi8.feishu.cn/wiki/VzQjwhpEjiQH2okq1f3cTBMcn0x)  
 (33) [Dify中的weaviate向量数据库操作](https://z0yrmerhgi8.feishu.cn/wiki/JYsNwWXZpiZzJYkem57cOiFPnhQ)  
 (34) [在Windows平台上通过PyCharm调试Celery任务](https://mp.weixin.qq.com/s/ad6dwsDVHGtBeaIzgaJGRw)  
+(35) [Dify中FixedRecursiveCharacterTextSplitter的chunk长度计算方式](https://z0yrmerhgi8.feishu.cn/wiki/FZV4w1vhsi9Dl4kO5C7cyYOCnFd)  
+(36) [Dify中高质量索引模式时，通过线程池处理chunk过程](https://z0yrmerhgi8.feishu.cn/wiki/I49IwXNxQitMipkSLLbcgGWOn8b)  
 ___
 #### 《Xinference项目》
 ___
